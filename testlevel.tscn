@@ -8,6 +8,9 @@ size = Vector2(13, 20)
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_w3snd"]
 size = Vector2(100, 20)
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_pi5jr"]
+size = Vector2(200, 200)
+
 [node name="Control" type="Control" unique_id=1439330419]
 layout_mode = 3
 anchors_preset = 15
@@ -32,12 +35,52 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Floor" unique_id=1037867717]
-position = Vector2(578, 511)
+position = Vector2(581, 506)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D2" unique_id=2008995224]
 shape = SubResource("RectangleShape2D_pi5jr")
 
 [node name="Sprite2D" type="Sprite2D" parent="Floor/StaticBody2D2" unique_id=1087222568]
+scale = Vector2(0.13000038, 1)
+texture = SubResource("PlaceholderTexture2D_w3snd")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Floor" unique_id=535496954]
+position = Vector2(673, 521)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D4" unique_id=602272991]
+shape = SubResource("RectangleShape2D_pi5jr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor/StaticBody2D4" unique_id=376749313]
+scale = Vector2(0.13000038, 1)
+texture = SubResource("PlaceholderTexture2D_w3snd")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Floor" unique_id=507247636]
+position = Vector2(723, 497)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D5" unique_id=957502650]
+shape = SubResource("RectangleShape2D_pi5jr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor/StaticBody2D5" unique_id=530760051]
+scale = Vector2(0.13000038, 1)
+texture = SubResource("PlaceholderTexture2D_w3snd")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Floor" unique_id=193819948]
+position = Vector2(721, 454)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D7" unique_id=319323743]
+shape = SubResource("RectangleShape2D_pi5jr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor/StaticBody2D7" unique_id=1294626977]
+scale = Vector2(0.13000038, 1)
+texture = SubResource("PlaceholderTexture2D_w3snd")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Floor" unique_id=884079019]
+position = Vector2(778, 475)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D6" unique_id=560271760]
+shape = SubResource("RectangleShape2D_pi5jr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor/StaticBody2D6" unique_id=1579217571]
 scale = Vector2(0.13000038, 1)
 texture = SubResource("PlaceholderTexture2D_w3snd")
 
@@ -55,3 +98,7 @@ texture = SubResource("PlaceholderTexture2D_w3snd")
 position = Vector2(532, 428)
 gravity = 400
 jumpvel = -140
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=2086897889]
+position = Vector2(603, 497)
+texture = SubResource("PlaceholderTexture2D_pi5jr")
