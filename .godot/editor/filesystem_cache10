@@ -1,5 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
 <<<<<<< HEAD
+<<<<<<< HEAD
 ::res://::1769863951
 chknightspritesheet.png::CompressedTexture2D::191477175213906679::1769856039::1769856040::1::::<><><>0<>0<>47956791939c5a24d5f6e4e204cb773b<>res://.godot/imported/chknightspritesheet.png-dc61ee888bd422c0f62e276d2f8ba916.ctex::
 icon.svg::CompressedTexture2D::6614921183426782038::1769806691::1769806691::1::::<><><>0<>0<>eb8638939f503e3fb0bc0fa981e97ae8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -35,3 +36,19 @@ common2.png::CompressedTexture2D::7292850755863741197::1769862937::1769863620::1
 Pillar.png::CompressedTexture2D::4813338949398130139::1769862425::1769863620::1::::<><><>0<>0<>4c32d503426e76fffd0bf51328bed88e<>res://.godot/imported/Pillar.png-6bc74f767ed2c94db6a1eeb02ec76f4c.ctex::
 >>>>>>> main
 >>>>>>> e1fe2c478589224c8993662d1684390e76f03382
+=======
+::res://::1769870586
+chknightmaskforged.png::CompressedTexture2D::83587666070772773::1769870586::1769870586::1::::<><><>0<>0<>6a8b6ea97c71a36727b78a2e3253c127<>res://.godot/imported/chknightmaskforged.png-78a7bff220ea4c1fbe544dc20ffd6e22.ctex::
+chknightmaskhalf.png::CompressedTexture2D::136854547444007968::1769870136::1769870136::1::::<><><>0<>0<>889cc0387747ccc42dda43db5ec14680<>res://.godot/imported/chknightmaskhalf.png-5cffb1eae14b2938d00d5943020e0fc2.ctex::
+chknightmaskwhole.png::CompressedTexture2D::3583994239863102836::1769870390::1769870390::1::::<><><>0<>0<>27fb78894e2be70b14fb6b14d910a6af<>res://.godot/imported/chknightmaskwhole.png-9189477571dbdbe89a741717f3fca440.ctex::
+chknightspritesheet.png::CompressedTexture2D::191477175213906679::1769856039::1769856040::1::::<><><>0<>0<>47956791939c5a24d5f6e4e204cb773b<>res://.godot/imported/chknightspritesheet.png-dc61ee888bd422c0f62e276d2f8ba916.ctex::
+icon.svg::CompressedTexture2D::6614921183426782038::1769806691::1769806691::1::::<><><>0<>0<>eb8638939f503e3fb0bc0fa981e97ae8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+forge.tscn::PackedScene::482550228435062684::1769869783::0::1::::<><><>0<>0<><>::uid://c0ojkm3pkvv4e::::res://testcharacter.tscn
+testcharacter.tscn::PackedScene::6557028731998266458::1769868761::0::1::::<><><>0<>0<><>::uid://bxjrgqessybs0::::res://testcharacterscript.gd<>uid://cy0uo4wm8et0::::res://chknightspritesheet.png
+testcharacterscript.gd::GDScript::4020387238190499873::1769869837::0::1::::<>CharacterBody2D<><>0<>0<><>::
+testlevel.tscn::PackedScene::659375904912066150::1769869837::0::1::::<><><>0<>0<><>::uid://c0ojkm3pkvv4e::::res://testcharacter.tscn
+::res://BackgroundImages/::1769869837
+common1.png::CompressedTexture2D::7583303532801751382::1769863951::1769869837::1::::<><><>0<>0<>cd143fa86f169255d1e8628d27ab5ba9<>res://.godot/imported/common1.png-98a432723154c9c9f8f701273e788606.ctex::
+common2.png::CompressedTexture2D::7292850755863741197::1769863951::1769869837::1::::<><><>0<>0<>a98452af42949f41df6d38a652ec172b<>res://.godot/imported/common2.png-5db18fbc3fb0f29bba9e4bdfcbad2787.ctex::
+Pillar.png::CompressedTexture2D::4813338949398130139::1769863951::1769869837::1::::<><><>0<>0<>4c32d503426e76fffd0bf51328bed88e<>res://.godot/imported/Pillar.png-6bc74f767ed2c94db6a1eeb02ec76f4c.ctex::
+>>>>>>> origin/rafe

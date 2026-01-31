@@ -5,4 +5,9 @@ res://testcharacterscript.gd
 res://testcharacter.tscn
 res://testlevel.tscn
 res://forge.tscn
+<<<<<<< HEAD
 >>>>>>> rafe
+=======
+res://testcharacterscript.gd
+res://knighthalfmask.tscn
+>>>>>>> origin/rafe
