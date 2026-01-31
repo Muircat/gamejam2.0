@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://4adto5mld4sh"]
+
+[ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://testcharacter.tscn" id="1_anwsc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0kbk6"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_f37j7"]
+
+[node name="left_level" type="Control" unique_id=661427357]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Control" type="Control" parent="." unique_id=1901440438]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=1769008212]
+layout_mode = 0
+offset_left = -2000.0
+offset_right = 1000.0
+offset_bottom = 500.0
+mouse_filter = 2
+
+[node name="floor" type="Control" parent="Control" unique_id=518050267]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Control/floor" unique_id=1320227449]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/floor/StaticBody2D" unique_id=732900609]
+position = Vector2(-500, 499)
+scale = Vector2(150, 0.25)
+shape = SubResource("RectangleShape2D_0kbk6")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/floor/StaticBody2D" unique_id=788113401]
+position = Vector2(-500, 499)
+scale = Vector2(3000, 4.998)
+texture = SubResource("PlaceholderTexture2D_f37j7")
+
+[node name="TestCharacter" parent="Control" unique_id=1608240896 instance=ExtResource("1_anwsc")]
+position = Vector2(388, 400)
