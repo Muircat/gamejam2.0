@@ -3,4 +3,5 @@ extends Area2D
 
 
 func _on_body_entered(body) -> void:
-	body.respawn()
+	if body.name == "TestCharacter":
+		body.respawn()

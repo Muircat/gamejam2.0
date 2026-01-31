@@ -3,3 +3,8 @@ res://testcharacterscript.gd
 res://liamtesting.tscn
 res://testcharacter.tscn
 res://death.gd
+res://respawn.gd
+res://fog.gdshader
+res://large_spike.tscn
+res://SmallSpikes.tscn
+res://knighthalfmask.tscn

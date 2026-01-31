@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var mask := 0
 var jump = true
 
-@export var respawnpos := Vector2(184,24)
+@export var respawnpos := Vector2(0,0)
 
 var faceway := 1
 
