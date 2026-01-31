@@ -1,3 +1,5 @@
 res://testcharacter.tscn
 res://testlevel.tscn
 res://forge.tscn
+res://testcharacterscript.gd
+res://knighthalfmask.tscn
