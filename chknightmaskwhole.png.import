@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://63pykwvic2ni"
-=======
-uid="uid://b8e4ru4ulj1b0"
->>>>>>> cc9629d006ba60e108e27b1a0f8d685fe16d1b2d
-path="res://.godot/imported/Pillar.png-6bc74f767ed2c94db6a1eeb02ec76f4c.ctex"
+uid="uid://brcd4j5qyl5t5"
+path="res://.godot/imported/chknightmaskwhole.png-9189477571dbdbe89a741717f3fca440.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BackgroundImages/Pillar.png"
-dest_files=["res://.godot/imported/Pillar.png-6bc74f767ed2c94db6a1eeb02ec76f4c.ctex"]
+source_file="res://chknightmaskwhole.png"
+dest_files=["res://.godot/imported/chknightmaskwhole.png-9189477571dbdbe89a741717f3fca440.ctex"]
 
 [params]
 
