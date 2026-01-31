@@ -98,6 +98,7 @@ texture = SubResource("PlaceholderTexture2D_w3snd")
 position = Vector2(532, 428)
 gravity = 400
 jumpvel = -140
+mask = 1
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=2086897889]
 position = Vector2(603, 497)
