@@ -90,7 +90,8 @@ animations = [{
 [node name="TestCharacter" type="CharacterBody2D" unique_id=1608240896]
 script = ExtResource("1_exmxo")
 speed = 100
-jumpvel = -100
+gravity = 400
+jumpvel = -140
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1784526545]
 position = Vector2(0, 6.5)
@@ -98,7 +99,8 @@ shape = SubResource("RectangleShape2D_qb6j1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1628654823]
 sprite_frames = SubResource("SpriteFrames_nlga5")
-animation = &"jump"
+animation = &"idle"
+frame_progress = 0.4827822
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1621685995]
 zoom = Vector2(4, 4)

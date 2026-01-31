@@ -35,7 +35,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Floor" unique_id=1037867717]
-position = Vector2(581, 506)
+position = Vector2(584, 512)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D2" unique_id=2008995224]
 shape = SubResource("RectangleShape2D_pi5jr")
