@@ -1,3 +1,5 @@
-res://forge.tscn
+res://testlevel.tscn
+res://testcharacterscript.gd
+res://liamtesting.tscn
 res://testcharacter.tscn
-res://knighthalfmask.tscn
+res://death.gd

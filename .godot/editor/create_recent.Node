@@ -1,13 +1,14 @@
-TextureRect
 CollisionShape2D
+Area2D
 StaticBody2D
+Marker2D
 Control
+ColorRect
+TextureRect
 PointLight2D
 AnimatedSprite2D
 AnimationTree
 Camera2D
 Sprite2D
 CharacterBody2D
-ColorRect
 RigidBody2D
-Node

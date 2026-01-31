@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://snk2gl730sat"]
+
+[ext_resource type="Texture2D" uid="uid://cawa2gklais4g" path="res://Blocks/1x1brick.png" id="1_3533s"]
+[ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://testcharacter.tscn" id="1_o3k3h"]
+[ext_resource type="Script" uid="uid://6xwtn08ttbb7" path="res://death.gd" id="4_12stj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3533s"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l6qvn"]
+size = Vector2(784, 20)
+
+[node name="Control" type="Control" unique_id=900830038]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TestCharacter" parent="." unique_id=1608240896 instance=ExtResource("1_o3k3h")]
+position = Vector2(184, 24)
+speed = 75
+gravity = 500
+jumpvel = -175
+mask = 2
+
+[node name="Floor" type="Control" parent="." unique_id=1423920141]
+layout_mode = 1
+anchor_left = -0.21400002
+anchor_top = -0.18100001
+anchor_right = -0.21400002
+anchor_bottom = -0.18100001
+offset_left = 5.5600004
+offset_top = 10.24
+offset_right = 45.560005
+offset_bottom = 49.24
+
+[node name="Floor" type="StaticBody2D" parent="Floor" unique_id=219652528]
+position = Vector2(179, 37)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Floor" unique_id=1109883997]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_3533s")
+
+[node name="1x1Brick" type="Sprite2D" parent="Floor/Floor" unique_id=1337002588]
+position = Vector2(8, 8)
+texture = ExtResource("1_3533s")
+
+[node name="Floor2" type="StaticBody2D" parent="Floor" unique_id=2034340037]
+position = Vector2(147, 37)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Floor2" unique_id=2049453298]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_3533s")
+
+[node name="1x1Brick" type="Sprite2D" parent="Floor/Floor2" unique_id=595425158]
+position = Vector2(8, 8)
+texture = ExtResource("1_3533s")
+
+[node name="Floor3" type="StaticBody2D" parent="Floor" unique_id=620115774]
+position = Vector2(99, 37)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Floor3" unique_id=160033448]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_3533s")
+
+[node name="1x1Brick" type="Sprite2D" parent="Floor/Floor3" unique_id=2118484057]
+position = Vector2(8, 8)
+texture = ExtResource("1_3533s")
+
+[node name="Floor4" type="StaticBody2D" parent="Floor" unique_id=1710642228]
+position = Vector2(19, 37)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Floor4" unique_id=213243620]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_3533s")
+
+[node name="1x1Brick" type="Sprite2D" parent="Floor/Floor4" unique_id=1737520084]
+position = Vector2(8, 8)
+texture = ExtResource("1_3533s")
+
+[node name="Floor5" type="StaticBody2D" parent="Floor" unique_id=445875977]
+position = Vector2(-77, 37)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Floor5" unique_id=1172009558]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_3533s")
+
+[node name="1x1Brick" type="Sprite2D" parent="Floor/Floor5" unique_id=336241133]
+position = Vector2(8, 8)
+texture = ExtResource("1_3533s")
+
+[node name="Floor6" type="StaticBody2D" parent="Floor" unique_id=379845178]
+position = Vector2(-189, 37)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Floor6" unique_id=870557091]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_3533s")
+
+[node name="1x1Brick" type="Sprite2D" parent="Floor/Floor6" unique_id=581874245]
+position = Vector2(8, 8)
+texture = ExtResource("1_3533s")
+
+[node name="Floor7" type="StaticBody2D" parent="Floor" unique_id=189444812]
+position = Vector2(211, 5.0000005)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Floor7" unique_id=2027340557]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_3533s")
+
+[node name="1x1Brick" type="Sprite2D" parent="Floor/Floor7" unique_id=780665165]
+position = Vector2(8, 8)
+texture = ExtResource("1_3533s")
+
+[node name="Floor8" type="StaticBody2D" parent="Floor" unique_id=190543575]
+position = Vector2(299, -11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Floor8" unique_id=391113386]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_3533s")
+
+[node name="1x1Brick" type="Sprite2D" parent="Floor/Floor8" unique_id=711304826]
+position = Vector2(8, 8)
+texture = ExtResource("1_3533s")
+
+[node name="Floor9" type="StaticBody2D" parent="Floor" unique_id=909636189]
+position = Vector2(243, 21)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Floor9" unique_id=230353067]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_3533s")
+
+[node name="1x1Brick" type="Sprite2D" parent="Floor/Floor9" unique_id=1658645021]
+position = Vector2(8, 8)
+texture = ExtResource("1_3533s")
+
+[node name="Area2D" type="Area2D" parent="Floor" unique_id=677332037]
+script = ExtResource("4_12stj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/Area2D" unique_id=58727389]
+position = Vector2(59, 69)
+shape = SubResource("RectangleShape2D_l6qvn")
+
+[connection signal="body_entered" from="Floor/Area2D" to="Floor/Area2D" method="_on_body_entered"]
