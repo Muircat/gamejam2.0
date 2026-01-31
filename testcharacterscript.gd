@@ -3,14 +3,23 @@ extends CharacterBody2D
 @export var speed := 200
 @export var gravity := 200
 @export var jumpvel := -300
+@export var mask := 0
+var jump = true
 
 var faceway := 1
 
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
-		if Input.is_action_just_pressed("jump"):
+	else:
+		jump = true
+		
+	if Input.is_action_just_pressed("jump"):
+		if is_on_floor():
 			velocity.y = jumpvel
+		elif (mask >= 2 and jump):
+			velocity.y = jumpvel
+			jump = false
 
 	var direction := Input.get_axis("move_left", "move_right")
 	velocity.x = direction * speed
