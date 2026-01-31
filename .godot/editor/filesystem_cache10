@@ -1,7 +1,11 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769861940
+::res://::1769872016
+1x1brick.png::CompressedTexture2D::2403349499868092241::1769870950::1769878928::1::::<><><>0<>0<>89e7efc5ea5557148e7e8f9f98cc0d26<>res://.godot/imported/1x1brick.png-9c47439be1a6e8082c003717e61adf1f.ctex::
+1x1dirt.png::CompressedTexture2D::5312252016390945754::1769871872::1769878928::1::::<><><>0<>0<>8ff5b058c26c38eb61d36915d0cb812b<>res://.godot/imported/1x1dirt.png-def593b283750e82472651d83a6f8e37.ctex::
 chknightspritesheet.png::CompressedTexture2D::191477175213906679::1769861819::1769861819::1::::<><><>0<>0<>47956791939c5a24d5f6e4e204cb773b<>res://.godot/imported/chknightspritesheet.png-dc61ee888bd422c0f62e276d2f8ba916.ctex::
 icon.svg::CompressedTexture2D::6614921183426782038::1769861819::1769861819::1::::<><><>0<>0<>eb8638939f503e3fb0bc0fa981e97ae8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Left_levelv1.tscn::PackedScene::2035693328796542887::1769865134::0::1::::<><><>0<>0<><>::uid://c0ojkm3pkvv4e::::res://testcharacter.tscn
+testcharactercalum.tscn::PackedScene::4210663509792240380::1769863700::0::1::::<><><>0<>0<><>::uid://bxjrgqessybs0::::res://testcharacterscript.gd<>uid://cy0uo4wm8et0::::res://chknightspritesheet.png
 testcharacter.tscn::PackedScene::6557028731998266458::1769861819::0::1::::<><><>0<>0<><>::uid://bxjrgqessybs0::::res://testcharacterscript.gd<>uid://cy0uo4wm8et0::::res://chknightspritesheet.png
 testcharacterscript.gd::GDScript::4020387238190499873::1769861819::0::1::::<>CharacterBody2D<><>0<>0<><>::
-testlevel.tscn::PackedScene::659375904912066150::1769861819::0::1::::<><><>0<>0<><>::uid://c0ojkm3pkvv4e::::res://testcharacter.tscn
+testlevel.tscn::PackedScene::659375904912066150::1769865136::0::1::::<><><>0<>0<><>::uid://c0ojkm3pkvv4e::::res://testcharacter.tscn
