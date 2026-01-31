@@ -8,9 +8,6 @@ size = Vector2(13, 20)
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_w3snd"]
 size = Vector2(100, 20)
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_pi5jr"]
-size = Vector2(200, 200)
-
 [node name="Control" type="Control" unique_id=1439330419]
 layout_mode = 3
 anchors_preset = 15
@@ -96,9 +93,3 @@ texture = SubResource("PlaceholderTexture2D_w3snd")
 
 [node name="TestCharacter" parent="." unique_id=2036381043 instance=ExtResource("2_pi5jr")]
 position = Vector2(532, 428)
-gravity = 400
-jumpvel = -140
-
-[node name="PointLight2D" type="PointLight2D" parent="." unique_id=2086897889]
-position = Vector2(603, 497)
-texture = SubResource("PlaceholderTexture2D_pi5jr")
