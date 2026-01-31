@@ -9,9 +9,8 @@ var faceway := 1
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
-
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = jumpvel
+		if Input.is_action_just_pressed("jump"):
+			velocity.y = jumpvel
 
 	var direction := Input.get_axis("move_left", "move_right")
 	velocity.x = direction * speed
@@ -20,11 +19,6 @@ func _physics_process(delta):
 	if not is_on_floor():
 		$AnimatedSprite2D.play("jump")
 	elif direction != 0:
-		$AnimatedSprite2D.play("run")
-	else:
-		$AnimatedSprite2D.play("idle")
-
-	if direction != 0:
 		faceway = sign(direction)
 		velocity.x = direction * speed
 		$AnimatedSprite2D.play("run")
