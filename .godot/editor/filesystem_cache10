@@ -1,8 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769860194
-1000_F_220803033_x6Oci7G6zKKfjqgsl9gBn3dpOyLdZmTN.jpg::CompressedTexture2D::8810088820659269087::1769807529::1769807529::1::::<><><>0<>0<>6498fda9d8c1184da8fd21940bdd506c<>res://.godot/imported/1000_F_220803033_x6Oci7G6zKKfjqgsl9gBn3dpOyLdZmTN.jpg-2b573a67f0a58b0eecf786c629589af0.ctex::
-chknightspritesheet.png::CompressedTexture2D::191477175213906679::1769856039::1769856040::1::::<><><>0<>0<>47956791939c5a24d5f6e4e204cb773b<>res://.godot/imported/chknightspritesheet.png-dc61ee888bd422c0f62e276d2f8ba916.ctex::
-icon.svg::CompressedTexture2D::6614921183426782038::1769806691::1769806691::1::::<><><>0<>0<>eb8638939f503e3fb0bc0fa981e97ae8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-testcharacter.tscn::PackedScene::6557028731998266458::1769856395::0::1::::<><><>0<>0<><>::uid://bxjrgqessybs0::::res://testcharacterscript.gd<>uid://cy0uo4wm8et0::::res://chknightspritesheet.png
-testcharacterscript.gd::GDScript::4020387238190499873::1769856359::0::1::::<>CharacterBody2D<><>0<>0<><>::
-testlevel.tscn::PackedScene::659375904912066150::1769811401::0::1::::<><><>0<>0<><>::uid://c1ik1x75meo5c::::res://icon.svg<>uid://c0ojkm3pkvv4e::::res://testcharacter.tscn
+::res://::1769861940
+chknightspritesheet.png::CompressedTexture2D::191477175213906679::1769861805::1769861805::1::::<><><>0<>0<>47956791939c5a24d5f6e4e204cb773b<>res://.godot/imported/chknightspritesheet.png-dc61ee888bd422c0f62e276d2f8ba916.ctex::
+icon.svg::CompressedTexture2D::6614921183426782038::1769861805::1769861805::1::::<><><>0<>0<>eb8638939f503e3fb0bc0fa981e97ae8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+testcharacter.tscn::PackedScene::6557028731998266458::1769861805::0::1::::<><><>0<>0<><>::uid://bxjrgqessybs0::::res://testcharacterscript.gd<>uid://cy0uo4wm8et0::::res://chknightspritesheet.png
+testcharacterscript.gd::GDScript::4020387238190499873::1769861805::0::1::::<>CharacterBody2D<><>0<>0<><>::
+testlevel.tscn::PackedScene::659375904912066150::1769861805::0::1::::<><><>0<>0<><>::uid://c0ojkm3pkvv4e::::res://testcharacter.tscn
