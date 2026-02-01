@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://Knight.tscn" id="20_82xsv"]
 [ext_resource type="Script" uid="uid://dubx8gg54tp2o" path="res://leftmask.gd" id="20_gngh3"]
 [ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="21_0n3wm"]
+[ext_resource type="Script" uid="uid://dfbbidsv6fhu7" path="res://rightmask.gd" id="21_kq58d"]
 [ext_resource type="Texture2D" uid="uid://djlq3p2nnywmf" path="res://Images/outside.png" id="23_qsp4k"]
 [ext_resource type="Texture2D" uid="uid://c8rtv08of7mw7" path="res://Images/mask-right.png" id="23_wnkbs"]
 [ext_resource type="AudioStream" uid="uid://c16c4w263lgvv" path="res://masktrack.mp3" id="24_1u8w0"]
@@ -1227,10 +1228,7 @@ polygon = PackedVector2Array(-432, -32, -432, -80, -448, -80, -448, -32)
 polygon = PackedVector2Array(-496, -80, -496, -96, -512, -96, -512, -80)
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=986093224]
-polygon = PackedVector2Array(-576, -32, -576, -48, -592, -48, -592, -32)
-
-[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=74850568]
-polygon = PackedVector2Array(-656, -32, -656, -48, -672, -48, -672, -32)
+polygon = PackedVector2Array(-576, -32, -576, -64, -592, -64, -592, -32)
 
 [node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=841074712]
 polygon = PackedVector2Array(-672, -80, -720, -80, -720, -96, -672, -96)
@@ -1279,6 +1277,7 @@ texture = ExtResource("21_0n3wm")
 
 [node name="Right" type="Area2D" parent="masks" unique_id=38860555]
 position = Vector2(-128, -160)
+script = ExtResource("21_kq58d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="masks/Right" unique_id=681646782]
 position = Vector2(0, 16)
