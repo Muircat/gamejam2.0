@@ -11,3 +11,9 @@ res://knighthalfmask.tscn
 res://leftmask.gd
 res://dissapear.gd
 res://appear.gd
+res://rightMask.gd
+res://fog2.gdshader
+res://Checkpoint.gd
+res://DeathCounter.gd
+res://main.tscn
+res://Title.tscn
