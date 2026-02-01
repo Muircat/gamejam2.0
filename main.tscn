@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 [gd_scene format=3 uid="uid://snk2gl730sat"]
 
+<<<<<<<< HEAD:main.tscn
 [ext_resource type="Texture2D" uid="uid://ca2ul22j8xm63" path="res://BackgroundImages/Background.png" id="1_0odxb"]
 [ext_resource type="Shader" uid="uid://ctrgk5irbhah1" path="res://fog.gdshader" id="2_lswn8"]
 [ext_resource type="Shader" uid="uid://bkfkageo6khl3" path="res://fog2.gdshader" id="3_a6jrf"]
+=======
+[gd_scene format=3 uid="uid://dji43l88oljkn"]
+
+[ext_resource type="Texture2D" uid="uid://ca2ul22j8xm63" path="res://BackgroundImages/Background.png" id="1_0odxb"]
+[ext_resource type="Shader" uid="uid://ctrgk5irbhah1" path="res://fog.gdshader" id="2_lswn8"]
+>>>>>>> liam
 [ext_resource type="Texture2D" uid="uid://dn3gg0uerfjm" path="res://Images/anvil.png" id="4_xuqvo"]
 [ext_resource type="Texture2D" uid="uid://brf0t3bab8f73" path="res://Blocks/forge-foreground.png" id="5_qsp4k"]
 [ext_resource type="Texture2D" uid="uid://dua0mxb1lai68" path="res://Images/right-dungeonv2.png" id="6_kq58d"]
@@ -13,11 +21,16 @@
 [ext_resource type="Texture2D" uid="uid://vwn6mywgx2gr" path="res://Blocks/forge-invis-dis.png" id="11_0rl1p"]
 [ext_resource type="Texture2D" uid="uid://dhd71qp8xpvqj" path="res://Images/right-dungeon-invis-dis.png" id="12_ok6jj"]
 [ext_resource type="Texture2D" uid="uid://b8l85308g40qh" path="res://Images/left-dungeon-dis.png" id="13_facbu"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://dqoj7gy8225wc" path="res://Images/well-dis.png" id="14_b1qrp"]
+=======
+[ext_resource type="Texture2D" uid="uid://ch62llu1iektj" path="res://Images/well-dis.png" id="14_b1qrp"]
+>>>>>>> liam
 [ext_resource type="Script" uid="uid://bdftiour3r4ms" path="res://appear.gd" id="15_come4"]
 [ext_resource type="Texture2D" uid="uid://okb2ytcojd17" path="res://Blocks/forge-invis-app.png" id="16_h8e4i"]
 [ext_resource type="Texture2D" uid="uid://bfmrii1qxabpm" path="res://Images/right-dungeon-invis-app.png" id="17_4lmeg"]
 [ext_resource type="Texture2D" uid="uid://bngssc8ii54k1" path="res://Images/left-dungeon-app.png" id="18_0cp0l"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://depcrngu13xaf" path="res://Images/well-app.png" id="19_d2t1y"]
 [ext_resource type="Script" uid="uid://dubx8gg54tp2o" path="res://leftmask.gd" id="20_gngh3"]
 [ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="21_0n3wm"]
@@ -25,6 +38,31 @@
 [ext_resource type="Texture2D" uid="uid://c8rtv08of7mw7" path="res://Images/mask-right.png" id="23_wnkbs"]
 [ext_resource type="Script" uid="uid://b87361fk8mg3k" path="res://Checkpoint.gd" id="24_f6a44"]
 [ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://testcharacter.tscn" id="25_0cbny"]
+========
+[ext_resource type="Texture2D" uid="uid://ca2ul22j8xm63" path="res://BackgroundImages/Background.png" id="1_1bkxr"]
+[ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://Knight.tscn" id="1_o3k3h"]
+[ext_resource type="Shader" uid="uid://ctrgk5irbhah1" path="res://fog.gdshader" id="2_2ql80"]
+[ext_resource type="Texture2D" uid="uid://vwn6mywgx2gr" path="res://Blocks/forge-invis-dis.png" id="3_12stj"]
+[ext_resource type="Texture2D" uid="uid://brf0t3bab8f73" path="res://Blocks/forge-foreground.png" id="3_l6qvn"]
+[ext_resource type="Texture2D" uid="uid://dn3gg0uerfjm" path="res://Images/anvil.png" id="3_o4e3p"]
+[ext_resource type="Texture2D" uid="uid://okb2ytcojd17" path="res://Blocks/forge-invis-app.png" id="4_1bkxr"]
+[ext_resource type="Script" uid="uid://6xwtn08ttbb7" path="res://death.gd" id="4_12stj"]
+[ext_resource type="Texture2D" uid="uid://dua0mxb1lai68" path="res://Images/right-dungeonv2.png" id="6_s6frn"]
+[ext_resource type="Script" uid="uid://dgqbln8cfe473" path="res://dissapear.gd" id="7_17b22"]
+[ext_resource type="Texture2D" uid="uid://dhd71qp8xpvqj" path="res://Images/right-dungeon-invis-dis.png" id="8_s6frn"]
+[ext_resource type="Texture2D" uid="uid://bfmrii1qxabpm" path="res://Images/right-dungeon-invis-app.png" id="10_6bclg"]
+[ext_resource type="Script" uid="uid://bdftiour3r4ms" path="res://appear.gd" id="10_a7188"]
+[ext_resource type="Script" uid="uid://dubx8gg54tp2o" path="res://leftmask.gd" id="11_e4kmn"]
+[ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="14_a7188"]
+>>>>>>>> liam:liamtesting.tscn
+=======
+[ext_resource type="Texture2D" uid="uid://bshqqul1tfyu8" path="res://Images/well-app.png" id="19_d2t1y"]
+[ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://Knight.tscn" id="20_82xsv"]
+[ext_resource type="Script" uid="uid://dubx8gg54tp2o" path="res://leftmask.gd" id="20_gngh3"]
+[ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="21_0n3wm"]
+[ext_resource type="Texture2D" uid="uid://c8rtv08of7mw7" path="res://Images/mask-right.png" id="23_wnkbs"]
+[ext_resource type="Script" uid="uid://dgibjectrw5mq" path="res://Checkpoint.gd" id="24_f6a44"]
+>>>>>>> liam
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2ql80"]
 
@@ -35,6 +73,7 @@ shader_parameter/smoke_color = Color(0.72, 0.72, 0.7056, 1)
 shader_parameter/distortion_speed = 0.238000011305
 shader_parameter/density = 0.146000006935
 
+<<<<<<< HEAD
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_34ydo"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ocwsu"]
@@ -43,6 +82,9 @@ shader_parameter/noise_texture = SubResource("NoiseTexture2D_34ydo")
 shader_parameter/smoke_color = Color(0.56, 0.56, 0.56, 1)
 shader_parameter/distortion_speed = 0.634000030115
 shader_parameter/density = 0.12800000608
+=======
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ocwsu"]
+>>>>>>> liam
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1q0fw"]
 size = Vector2(160, 0)
@@ -256,6 +298,10 @@ position = Vector2(-160, 0)
 texture = ExtResource("1_0odxb")
 
 [node name="ColorRect" type="ColorRect" parent="Background" unique_id=431891570]
+<<<<<<< HEAD
+=======
+visible = false
+>>>>>>> liam
 material = SubResource("ShaderMaterial_66ohr")
 layout_mode = 0
 offset_left = -880.0
@@ -264,6 +310,10 @@ offset_right = 1680.0
 offset_bottom = 48.0
 
 [node name="ColorRect2" type="ColorRect" parent="Background" unique_id=502863807]
+<<<<<<< HEAD
+=======
+visible = false
+>>>>>>> liam
 material = SubResource("ShaderMaterial_ocwsu")
 layout_mode = 0
 offset_left = -880.0
@@ -516,7 +566,11 @@ offset_bottom = 40.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Physical/Well" unique_id=394439202]
 
+<<<<<<< HEAD
 [node name="Well2" type="Sprite2D" parent="Physical/Well/StaticBody2D" unique_id=1457683602]
+=======
+[node name="Well" type="Sprite2D" parent="Physical/Well/StaticBody2D" unique_id=727375546]
+>>>>>>> liam
 position = Vector2(0, -264)
 texture = ExtResource("8_htxhm")
 
@@ -1122,6 +1176,15 @@ polygon = PackedVector2Array(-24, -304, -24, -336, -8, -336, -8, -304)
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Physical/Dissapear/Well" unique_id=449464430]
 polygon = PackedVector2Array(8, -208, 8, -224, 24, -224, 24, -208)
 
+<<<<<<< HEAD
+=======
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Physical/Dissapear/Well" unique_id=2073882681]
+polygon = PackedVector2Array(-40, -192, -24, -192, -24, -176, -40, -176)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Dissapear/Well/CollisionPolygon2D4" unique_id=474493500]
+polygon = PackedVector2Array(-40, -96, -24, -96, -24, -80, -40, -80)
+
+>>>>>>> liam
 [node name="Appear" type="Control" parent="Physical" unique_id=1880508174]
 visible = false
 anchors_preset = 0
@@ -1195,6 +1258,7 @@ polygon = PackedVector2Array(-112, -112, -112, -160, -96, -160, -96, -112)
 position = Vector2(0, -264)
 texture = ExtResource("19_d2t1y")
 
+<<<<<<< HEAD
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=390806326]
 polygon = PackedVector2Array(-16, -96, -16, -112, -32, -112, -32, -96)
 
@@ -1204,11 +1268,20 @@ polygon = PackedVector2Array(32, -144, 32, -160, 16, -160, 16, -144)
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=793232832]
 polygon = PackedVector2Array(-16, -192, -16, -208, -32, -208, -32, -192)
 
+=======
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=2130994077]
+polygon = PackedVector2Array(32, -144, 32, -160, 16, -160, 16, -144)
+
+>>>>>>> liam
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=1898753962]
 polygon = PackedVector2Array(16, -224, 16, -256, 0, -256, 0, -224)
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=1620523677]
+<<<<<<< HEAD
 polygon = PackedVector2Array(16, -272, 16, -288, 32, -288, 32, -272)
+=======
+polygon = PackedVector2Array(0, -256, 0, -288, 16, -288, 16, -256)
+>>>>>>> liam
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=1466917815]
 polygon = PackedVector2Array(16, -384, 16, -400, 32, -400, 32, -384)
@@ -1228,9 +1301,15 @@ shape = SubResource("RectangleShape2D_17b22")
 [node name="MaskLeft" type="Sprite2D" parent="masks/Left" unique_id=186006526]
 texture = ExtResource("21_0n3wm")
 
+<<<<<<< HEAD
+<<<<<<<< HEAD:main.tscn
 [node name="Right" type="Area2D" parent="masks" unique_id=38860555]
 position = Vector2(-128, -160)
 script = ExtResource("22_qnost")
+=======
+[node name="Right" type="Area2D" parent="masks" unique_id=38860555]
+position = Vector2(-128, -160)
+>>>>>>> liam
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="masks/Right" unique_id=681646782]
 position = Vector2(0, 16)
@@ -1293,10 +1372,17 @@ script = ExtResource("24_f6a44")
 position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_6s67a")
 
+<<<<<<< HEAD
 [node name="Knight" parent="." unique_id=1608240896 instance=ExtResource("25_0cbny")]
 speed = 75
 gravity = 500
 jumpvel = -175
+========
+[node name="Knight" parent="." unique_id=1608240896 instance=ExtResource("1_o3k3h")]
+>>>>>>>> liam:liamtesting.tscn
+=======
+[node name="Knight" parent="." unique_id=1608240896 instance=ExtResource("20_82xsv")]
+>>>>>>> liam
 
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Large/LargeSpikes2" to="Physical/Spikes/Right Dungeon Large/LargeSpikes2" method="_on_body_entered"]
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Large/LargeSpikes" to="Physical/Spikes/Right Dungeon Large/LargeSpikes" method="_on_body_entered"]

@@ -5,7 +5,7 @@ extends CharacterBody2D
 @export var gravity := 500
 @export var jumpvel := -175
 @export var mask := 0
-@export var respawnpos := Vector2(0,0)
+@export var respawnpos:=Vector2(0,0)
 
 #player progress
 var jump = true
@@ -35,6 +35,7 @@ func respawn():
 func _ready():
 	set_process_input(true) 
 	on.hideBlocks()
+	print("Ready")
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -95,6 +96,7 @@ func getRightMask():
 
 func getLeftMask():
 	hasleftmask = true
+<<<<<<< HEAD
 	leftMask = true
 	active = ["left"+bases[0],"left"+bases[1],"left"+bases[2]]
 	on.call_deferred("showBlocks")
@@ -102,3 +104,10 @@ func getLeftMask():
 
 func setRespawn(pos):
 	self.respawnpos = pos
+=======
+	switchLeftMask()
+
+func setRespawn(pos):
+	self.respawnpos = pos
+	print("set")
+>>>>>>> liam

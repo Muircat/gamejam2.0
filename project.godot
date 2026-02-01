@@ -15,7 +15,11 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="firstProject"
+<<<<<<< HEAD
 run/main_scene="uid://nxxsv6ye6f3d"
+=======
+run/main_scene="uid://dji43l88oljkn"
+>>>>>>> liam
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

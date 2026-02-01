@@ -1,10 +1,6 @@
-res://testlevel.tscn
-res://testcharacterscript.gd
-res://liamtesting.tscn
-res://testcharacter.tscn
-res://death.gd
-res://respawn.gd
+res://main.tscn
 res://fog.gdshader
+<<<<<<< HEAD
 res://large_spike.tscn
 res://SmallSpikes.tscn
 res://knighthalfmask.tscn
@@ -17,3 +13,12 @@ res://Checkpoint.gd
 res://DeathCounter.gd
 res://main.tscn
 res://Title.tscn
+=======
+res://testcharacter.tscn
+res://testcharacterscript.gd
+res://Checkpoint.gd
+res://forge.tscn
+res://liamtesting.tscn
+res://death.gd
+res://Knight.tscn
+>>>>>>> liam

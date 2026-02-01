@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dqoj7gy8225wc"
+=======
+uid="uid://ch62llu1iektj"
+>>>>>>> liam
 path="res://.godot/imported/well-dis.png-bf2eb7fdeb436b4e3209f46b75d08b7b.ctex"
 metadata={
 "vram_texture": false

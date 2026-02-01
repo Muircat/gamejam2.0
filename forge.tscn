@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://g40scylf5ytw"]
 
-[ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://testcharacter.tscn" id="1_ewbv2"]
+[ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://Knight.tscn" id="1_ewbv2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jcvfb"]
 size = Vector2(240, 5)
@@ -130,6 +130,7 @@ texture = SubResource("PlaceholderTexture2D_ewbv2")
 
 [node name="TestCharacter" parent="." unique_id=1608240896 instance=ExtResource("1_ewbv2")]
 position = Vector2(15, -16)
+respawnpos = Vector2(10, 100)
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=925126513]
 position = Vector2(-78, 30)

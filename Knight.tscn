@@ -118,7 +118,7 @@ animations = [{
 "speed": 9.0
 }]
 
-[node name="TestCharacter" type="CharacterBody2D" unique_id=1608240896]
+[node name="Knight" type="CharacterBody2D" unique_id=1608240896]
 script = ExtResource("1_exmxo")
 speed = 100
 gravity = 400
@@ -138,7 +138,7 @@ shape = SubResource("RectangleShape2D_qb6j1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1628654823]
 sprite_frames = SubResource("SpriteFrames_nlga5")
-animation = &"leftidle"
+animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1621685995]
 zoom = Vector2(4, 4)
