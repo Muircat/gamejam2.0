@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://snk2gl730sat"]
 
 [ext_resource type="Texture2D" uid="uid://ca2ul22j8xm63" path="res://BackgroundImages/Background.png" id="1_1bkxr"]
-[ext_resource type="Texture2D" uid="uid://cawa2gklais4g" path="res://Blocks/1x1brick.png" id="1_3533s"]
 [ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://testcharacter.tscn" id="1_o3k3h"]
 [ext_resource type="Shader" uid="uid://ctrgk5irbhah1" path="res://fog.gdshader" id="2_2ql80"]
 [ext_resource type="Texture2D" uid="uid://vwn6mywgx2gr" path="res://Blocks/forge-invis-dis.png" id="3_12stj"]
@@ -15,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bfmrii1qxabpm" path="res://Images/right-dungeon-invis-app.png" id="10_6bclg"]
 [ext_resource type="Script" uid="uid://bdftiour3r4ms" path="res://appear.gd" id="10_a7188"]
 [ext_resource type="Script" uid="uid://dubx8gg54tp2o" path="res://leftmask.gd" id="11_e4kmn"]
+[ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="14_a7188"]
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2ql80"]
 
@@ -812,11 +812,11 @@ offset_bottom = 40.0
 position = Vector2(1640, -128)
 script = ExtResource("11_e4kmn")
 
-[node name="1x1Brick" type="Sprite2D" parent="masks/Left" unique_id=699656049]
-texture = ExtResource("1_3533s")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="masks/Left" unique_id=49277162]
 shape = SubResource("RectangleShape2D_17b22")
+
+[node name="MaskLeft" type="Sprite2D" parent="masks/Left" unique_id=186006526]
+texture = ExtResource("14_a7188")
 
 [node name="Knight" parent="." unique_id=1608240896 instance=ExtResource("1_o3k3h")]
 speed = 75
