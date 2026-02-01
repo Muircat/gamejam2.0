@@ -1,15 +1,17 @@
 [gd_scene format=3 uid="uid://rhvquj0h11rg"]
 
 [ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="1_ax32a"]
+[ext_resource type="Script" uid="uid://csjkdt77xuj72" path="res://title.gd" id="1_quvj1"]
 [ext_resource type="Texture2D" uid="uid://c8rtv08of7mw7" path="res://Images/mask-right.png" id="2_quvj1"]
 
-[node name="Control" type="Control" unique_id=290522133]
+[node name="Control2" type="Control" unique_id=290522133]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 234.0
 offset_top = 97.0
 offset_right = 274.0
 offset_bottom = 137.0
+script = ExtResource("1_quvj1")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2055516883]
 layout_mode = 0
@@ -31,12 +33,12 @@ texture = ExtResource("2_quvj1")
 
 [node name="Label" type="Label" parent="." unique_id=308675149]
 layout_mode = 0
-offset_left = -34.0
-offset_top = 150.0
-offset_right = 296.0
-offset_bottom = 320.0
-theme_override_font_sizes/font_size = 92
-text = "MASK"
+offset_left = -215.0
+offset_top = 182.0
+offset_right = 580.0
+offset_bottom = 352.0
+theme_override_font_sizes/font_size = 76
+text = "MASK in the MINE"
 
 [node name="Label2" type="Label" parent="." unique_id=1834891763]
 layout_mode = 0

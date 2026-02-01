@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://d3wsb20gl24s4"]
+
+[ext_resource type="FontFile" uid="uid://dabvq6gxa5f0w" path="res://AwfullyDigital.ttf" id="1_e1x85"]
+
+[resource]
+default_font = ExtResource("1_e1x85")
+default_font_size = 31
