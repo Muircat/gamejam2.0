@@ -1,29 +1,39 @@
-[gd_scene format=3 uid="uid://snk2gl730sat"]
+[gd_scene format=3 uid="uid://dji43l88oljkn"]
 
-[ext_resource type="Texture2D" uid="uid://ca2ul22j8xm63" path="res://BackgroundImages/Background.png" id="1_1bkxr"]
-[ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://Knight.tscn" id="1_o3k3h"]
-[ext_resource type="Shader" uid="uid://ctrgk5irbhah1" path="res://fog.gdshader" id="2_2ql80"]
-[ext_resource type="Texture2D" uid="uid://vwn6mywgx2gr" path="res://Blocks/forge-invis-dis.png" id="3_12stj"]
-[ext_resource type="Texture2D" uid="uid://brf0t3bab8f73" path="res://Blocks/forge-foreground.png" id="3_l6qvn"]
-[ext_resource type="Texture2D" uid="uid://dn3gg0uerfjm" path="res://Images/anvil.png" id="3_o4e3p"]
-[ext_resource type="Texture2D" uid="uid://okb2ytcojd17" path="res://Blocks/forge-invis-app.png" id="4_1bkxr"]
-[ext_resource type="Script" uid="uid://6xwtn08ttbb7" path="res://death.gd" id="4_12stj"]
-[ext_resource type="Texture2D" uid="uid://dua0mxb1lai68" path="res://Images/right-dungeonv2.png" id="6_s6frn"]
-[ext_resource type="Script" uid="uid://dgqbln8cfe473" path="res://dissapear.gd" id="7_17b22"]
-[ext_resource type="Texture2D" uid="uid://dhd71qp8xpvqj" path="res://Images/right-dungeon-invis-dis.png" id="8_s6frn"]
-[ext_resource type="Texture2D" uid="uid://bfmrii1qxabpm" path="res://Images/right-dungeon-invis-app.png" id="10_6bclg"]
-[ext_resource type="Script" uid="uid://bdftiour3r4ms" path="res://appear.gd" id="10_a7188"]
-[ext_resource type="Script" uid="uid://dubx8gg54tp2o" path="res://leftmask.gd" id="11_e4kmn"]
-[ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="14_a7188"]
+[ext_resource type="Texture2D" uid="uid://ca2ul22j8xm63" path="res://BackgroundImages/Background.png" id="1_0odxb"]
+[ext_resource type="Shader" uid="uid://ctrgk5irbhah1" path="res://fog.gdshader" id="2_lswn8"]
+[ext_resource type="Texture2D" uid="uid://dn3gg0uerfjm" path="res://Images/anvil.png" id="4_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://brf0t3bab8f73" path="res://Blocks/forge-foreground.png" id="5_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://dua0mxb1lai68" path="res://Images/right-dungeonv2.png" id="6_kq58d"]
+[ext_resource type="Texture2D" uid="uid://ru0svbi7fypq" path="res://Images/left-dungeon.png" id="7_seu75"]
+[ext_resource type="Texture2D" uid="uid://b40kjit2vg4ah" path="res://Images/well.png" id="8_htxhm"]
+[ext_resource type="Script" uid="uid://6xwtn08ttbb7" path="res://death.gd" id="9_jq2sk"]
+[ext_resource type="Script" uid="uid://dgqbln8cfe473" path="res://dissapear.gd" id="10_4k2k6"]
+[ext_resource type="Texture2D" uid="uid://vwn6mywgx2gr" path="res://Blocks/forge-invis-dis.png" id="11_0rl1p"]
+[ext_resource type="Texture2D" uid="uid://dhd71qp8xpvqj" path="res://Images/right-dungeon-invis-dis.png" id="12_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://b8l85308g40qh" path="res://Images/left-dungeon-dis.png" id="13_facbu"]
+[ext_resource type="Texture2D" uid="uid://ch62llu1iektj" path="res://Images/well-dis.png" id="14_b1qrp"]
+[ext_resource type="Script" uid="uid://bdftiour3r4ms" path="res://appear.gd" id="15_come4"]
+[ext_resource type="Texture2D" uid="uid://okb2ytcojd17" path="res://Blocks/forge-invis-app.png" id="16_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://bfmrii1qxabpm" path="res://Images/right-dungeon-invis-app.png" id="17_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://bngssc8ii54k1" path="res://Images/left-dungeon-app.png" id="18_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://bshqqul1tfyu8" path="res://Images/well-app.png" id="19_d2t1y"]
+[ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://Knight.tscn" id="20_82xsv"]
+[ext_resource type="Script" uid="uid://dubx8gg54tp2o" path="res://leftmask.gd" id="20_gngh3"]
+[ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="21_0n3wm"]
+[ext_resource type="Texture2D" uid="uid://c8rtv08of7mw7" path="res://Images/mask-right.png" id="23_wnkbs"]
+[ext_resource type="Script" uid="uid://dgibjectrw5mq" path="res://Checkpoint.gd" id="24_f6a44"]
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2ql80"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_66ohr"]
-shader = ExtResource("2_2ql80")
+shader = ExtResource("2_lswn8")
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_2ql80")
 shader_parameter/smoke_color = Color(0.72, 0.72, 0.7056, 1)
-shader_parameter/distortion_speed = 0.1750000083125
-shader_parameter/density = 0.2250000106875
+shader_parameter/distortion_speed = 0.238000011305
+shader_parameter/density = 0.146000006935
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ocwsu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1q0fw"]
 size = Vector2(160, 0)
@@ -37,6 +47,12 @@ size = Vector2(32, 8)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_17b22"]
 size = Vector2(16, 16)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_34ydo"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6s67a"]
+size = Vector2(16, 16)
+
 [node name="Control" type="Control" unique_id=900830038]
 layout_mode = 3
 anchors_preset = 0
@@ -48,133 +64,203 @@ offset_bottom = 40.0
 
 [node name="Forge Background" type="Sprite2D" parent="Background" unique_id=540687572]
 position = Vector2(0, -8)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Right Background(s)" type="Sprite2D" parent="Background" unique_id=1938030166]
 position = Vector2(160, -8)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)" unique_id=1831219846]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background" unique_id=732091638]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background" unique_id=1349609687]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background" unique_id=143637150]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=2001276863]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1449344746]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=2061346595]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1586070093]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1231069242]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1448232368]
 position = Vector2(0, -112)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=878533471]
 position = Vector2(-160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=881310647]
 position = Vector2(-160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=605352745]
 position = Vector2(-160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=411129023]
 position = Vector2(-160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=631882602]
 position = Vector2(-160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1088401585]
 position = Vector2(-160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1296585610]
 position = Vector2(-160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=815038814]
 position = Vector2(-160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1790432789]
 position = Vector2(-160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1110379733]
 position = Vector2(0, -112)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1448118104]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=771975699]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=581492607]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1004444416]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=986177645]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=654696752]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1081598670]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1822787045]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
 
 [node name="Forge Background" type="Sprite2D" parent="Background/Right Background(s)/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background/Forge Background" unique_id=1861406716]
 position = Vector2(160, 0)
-texture = ExtResource("1_1bkxr")
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background" unique_id=2112531751]
+position = Vector2(-160, -8)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background" unique_id=61563259]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background" unique_id=1285221388]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background" unique_id=1989184633]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background" unique_id=1365395320]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=283338041]
+position = Vector2(0, -112)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=332338321]
+position = Vector2(640, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=174434978]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=1731653454]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=1196589489]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=721997694]
+position = Vector2(480, -112)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=376845847]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=56694513]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=962929555]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
+
+[node name="Left Background" type="Sprite2D" parent="Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background/Left Background" unique_id=8031261]
+position = Vector2(-160, 0)
+texture = ExtResource("1_0odxb")
 
 [node name="ColorRect" type="ColorRect" parent="Background" unique_id=431891570]
+visible = false
 material = SubResource("ShaderMaterial_66ohr")
 layout_mode = 0
-offset_left = -80.0
-offset_top = -288.0
+offset_left = -880.0
+offset_top = -464.0
+offset_right = 1680.0
+offset_bottom = 48.0
+
+[node name="ColorRect2" type="ColorRect" parent="Background" unique_id=502863807]
+visible = false
+material = SubResource("ShaderMaterial_ocwsu")
+layout_mode = 0
+offset_left = -880.0
+offset_top = -448.0
 offset_right = 1680.0
 offset_bottom = 48.0
 
@@ -185,7 +271,62 @@ offset_bottom = 40.0
 
 [node name="Anvil" type="Sprite2D" parent="Foreground" unique_id=1456085685]
 position = Vector2(0, 8)
-texture = ExtResource("3_o4e3p")
+texture = ExtResource("4_xuqvo")
+
+[node name="BlackBorder" type="ColorRect" parent="Foreground" unique_id=912095797]
+layout_mode = 0
+offset_left = -880.0
+offset_top = -288.0
+offset_right = -80.0
+offset_bottom = -208.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Foreground/BlackBorder" unique_id=1121071716]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.4
+offset_left = -264.0
+offset_right = -8.0
+offset_bottom = 304.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Foreground/BlackBorder/ColorRect2" unique_id=527404566]
+layout_mode = 0
+offset_left = 2816.0
+offset_right = 3096.0
+offset_bottom = 328.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Foreground/BlackBorder/ColorRect2/ColorRect" unique_id=468002527]
+layout_mode = 0
+offset_left = -2824.0
+offset_top = 328.0
+offset_right = 304.0
+offset_bottom = 768.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Foreground/BlackBorder" unique_id=1123979133]
+layout_mode = 0
+offset_left = 960.0
+offset_top = -176.0
+offset_right = 2832.0
+offset_bottom = 80.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Foreground/BlackBorder/ColorRect" unique_id=1959878883]
+layout_mode = 0
+offset_left = -1752.0
+offset_right = -152.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Foreground" unique_id=2046388945]
+layout_mode = 0
+offset_left = -1672.0
+offset_top = -1104.0
+offset_right = 1952.0
+offset_bottom = -464.0
+color = Color(0, 0.9529412, 1, 1)
 
 [node name="Physical" type="Control" parent="." unique_id=192658643]
 anchors_preset = 0
@@ -199,7 +340,7 @@ offset_bottom = 40.0
 
 [node name="ForgeForeground" type="Sprite2D" parent="Physical/Forge" unique_id=1502927766]
 position = Vector2(0, -8)
-texture = ExtResource("3_l6qvn")
+texture = ExtResource("5_qsp4k")
 
 [node name="Forge Floor" type="StaticBody2D" parent="Physical/Forge" unique_id=289335486]
 position = Vector2(0, 16)
@@ -226,13 +367,13 @@ position = Vector2(80, -16)
 
 [node name="RightDungeonv2" type="Sprite2D" parent="Physical/Right/Right Dungeon" unique_id=1662448022]
 position = Vector2(800, -64)
-texture = ExtResource("6_s6frn")
+texture = ExtResource("6_kq58d")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Right/Right Dungeon" unique_id=861600416]
-polygon = PackedVector2Array(0, 32, 416, 32, 416, 16, 432, 16, 432, -32, 464, -32, 464, -56, 448, -56, 448, -64, 464, -64, 464, -80, 528, -80, 528, -48, 560, -48, 560, -40, 528, -40, 528, 0, 560, 0, 560, 8, 528, 8, 528, 32, 656, 32, 656, 48, 704, 48, 704, 32, 912, 32, 912, 48, 960, 48, 960, 32, 1168, 32, 1168, 16, 1184, 16, 1184, 32, 1584, 32, 1584, 0, 1568, 0, 1568, -8, 1584, -8, 1584, -80, 1280, -80, 1280, -88, 1296, -88, 1296, -96, 1584, -96, 1584, -192, 1600, -192, 1600, 64, 0, 64)
+polygon = PackedVector2Array(0, 32, 416, 32, 416, 16, 432, 16, 432, -32, 464, -32, 464, -56, 448, -56, 448, -64, 464, -64, 464, -80, 528, -80, 528, -48, 560, -48, 560, -40, 528, -40, 528, 0, 560, 0, 560, 8, 528, 8, 528, 32, 529.68915, 32, 656, 32, 656, 48, 704, 48, 704, 32, 912, 32, 912, 48, 960, 48, 960, 32, 1168, 32, 1168, 16, 1184, 16, 1184, 32, 1584, 32, 1584, 0, 1568, 0, 1568, -8, 1584, -8, 1584, -80, 1280, -80, 1280, -88, 1296, -88, 1296, -96, 1584, -96, 1584, -272, 1600, -192, 1600, 64, 0, 64)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Right/Right Dungeon" unique_id=1891477608]
-polygon = PackedVector2Array(0, -32, 304, -32, 304, -64, 320, -64, 320, -80, 304, -80, 304, -112, 16, -112, 16, -176, 464, -176, 464, -128, 480, -128, 480, -192, 0, -192)
+polygon = PackedVector2Array(0, -32, 304, -32, 304, -64, 320, -64, 320, -80, 304, -80, 304, -112, 16, -112, 16, -176, 464, -176, 464, -128, 480, -128, 480, -296, 0, -192)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Physical/Right/Right Dungeon" unique_id=1950994587]
 polygon = PackedVector2Array(512, -128, 528, -128, 528, -144, 1232, -144, 1232, -16, 1552, -16, 1552, -24, 1536, -24, 1536, -32, 1248, -32, 1248, -64, 1264, -64, 1264, -72, 1248, -72, 1248, -144, 1552, -144, 1552, -152, 1536, -152, 1536, -160, 512, -160)
@@ -315,6 +456,69 @@ polygon = PackedVector2Array(1552, 24, 1552, 16, 1568, 16, 1568, 24)
 [node name="CollisionPolygon2D29" type="CollisionPolygon2D" parent="Physical/Right/Right Dungeon" unique_id=1443009168]
 polygon = PackedVector2Array(1264, -48, 1280, -48, 1280, -40, 1264, -40)
 
+[node name="Left" type="Control" parent="Physical" unique_id=1127397461]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Left Collisions" type="StaticBody2D" parent="Physical/Left" unique_id=1892441963]
+position = Vector2(-80, -16)
+
+[node name="LeftDungeon" type="Sprite2D" parent="Physical/Left/Left Collisions" unique_id=1948226082]
+position = Vector2(-400, -64)
+texture = ExtResource("7_seu75")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=59401606]
+polygon = PackedVector2Array(0, 32, -48, 32, -48, 24, -64, 24, -64, 8, -80, 8, -80, -8, -96, -8, -96, 32, -176, 32, -176, 48, -224, 48, -224, 32, -352, 32, -352, -32, -416, -32, -416, 0, -432, 0, -432, 8, -416, 8, -416, 32, -720, 32, -720, -48, -784, -48, -784, -72, -752, -72, -752, -80, -784, -80, -784, -176, -16, -176, -16, -112, -112, -112, -112, -32, 0, -32, 0, -192, -800, -192, -800, 64, 0, 64)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=859614243]
+position = Vector2(80, 16)
+polygon = PackedVector2Array(-528, -32, -592, -32, -592, -48, -544, -48, -544, -40, -528, -40)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=501419028]
+polygon = PackedVector2Array(-528, -8, -528, -16, -560, -16, -560, -8)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=1363569555]
+polygon = PackedVector2Array(-592, -8, -592, -16, -624, -16, -624, -8)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=42023448]
+polygon = PackedVector2Array(-656, -16, -656, -32, -672, -32, -672, -16)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=120210230]
+polygon = PackedVector2Array(-672, -80, -672, -96, -624, -96, -624, -80)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=287900984]
+polygon = PackedVector2Array(-592, -96, -544, -96, -544, -104, -592, -104)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=1680437196]
+polygon = PackedVector2Array(-480, -96, -480, -112, -464, -112, -464, -96)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=478488032]
+polygon = PackedVector2Array(-416, -112, -416, -120, -400, -120, -400, -112)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=1977765200]
+polygon = PackedVector2Array(-368, -112, -368, -120, -336, -120, -336, -112)
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Physical/Left/Left Collisions" unique_id=184718191]
+polygon = PackedVector2Array(-304, -112, -304, -120, -224, -120, -224, -112)
+
+[node name="Well" type="Control" parent="Physical" unique_id=1411541052]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Physical/Well" unique_id=394439202]
+
+[node name="Well" type="Sprite2D" parent="Physical/Well/StaticBody2D" unique_id=727375546]
+position = Vector2(0, -264)
+texture = ExtResource("8_htxhm")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Well/StaticBody2D" unique_id=127892027]
+polygon = PackedVector2Array(-32, -64, -32, -88, -16, -88, -16, -96, -32, -96, -32, -304, -16, -304, -16, -312, -32, -312, -32, -424, -16, -424, -16, -432, -32, -432, -32, -464, -48, -464, -48, -64)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Well/StaticBody2D" unique_id=58433931]
+polygon = PackedVector2Array(32, -64, 32, -136, 16, -136, 16, -144, 32, -144, 32, -464, 48, -464, 48, -64)
+
 [node name="Spikes" type="Control" parent="Physical" unique_id=141075846]
 anchors_preset = 0
 
@@ -325,7 +529,7 @@ offset_bottom = 40.0
 
 [node name="LargeSpikes2" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1362688455]
 position = Vector2(624, 0)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes2" unique_id=540232950]
 position = Vector2(0, 16)
@@ -333,7 +537,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=436570346]
 position = Vector2(-64, -80)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes" unique_id=235157502]
 position = Vector2(0, 16)
@@ -341,7 +545,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes3" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1329458103]
 position = Vector2(816, -48)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes3" unique_id=881153947]
 position = Vector2(0, 16)
@@ -349,7 +553,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes4" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1793471057]
 position = Vector2(800, -128)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes4" unique_id=835113002]
 position = Vector2(0, 16)
@@ -357,7 +561,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes5" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1665512432]
 position = Vector2(1152, -64)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes5" unique_id=543459]
 position = Vector2(0, 16)
@@ -365,7 +569,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes6" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1838365127]
 position = Vector2(1120, -128)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes6" unique_id=478730275]
 position = Vector2(0, 16)
@@ -373,7 +577,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes7" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1501801587]
 position = Vector2(1184, -128)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes7" unique_id=721068316]
 position = Vector2(0, 16)
@@ -381,7 +585,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes8" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=54140017]
 position = Vector2(1328, 0)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes8" unique_id=1763490151]
 position = Vector2(0, 16)
@@ -389,7 +593,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes9" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=767290993]
 position = Vector2(1584, -64)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes9" unique_id=1910524348]
 position = Vector2(0, 16)
@@ -397,7 +601,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes10" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=13039923]
 position = Vector2(1552, -64)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes10" unique_id=1885039531]
 position = Vector2(0, 16)
@@ -405,7 +609,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes11" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=440490712]
 position = Vector2(1520, -64)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes11" unique_id=1066785239]
 position = Vector2(0, 16)
@@ -413,7 +617,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes12" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=386119418]
 position = Vector2(1488, -64)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes12" unique_id=436865985]
 position = Vector2(0, 16)
@@ -421,7 +625,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes13" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1667159310]
 position = Vector2(1424, -64)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes13" unique_id=227442619]
 position = Vector2(0, 16)
@@ -429,7 +633,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes14" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1841694]
 position = Vector2(1488, -128)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes14" unique_id=1635517830]
 position = Vector2(0, 16)
@@ -437,7 +641,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 
 [node name="LargeSpikes15" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1826942058]
 position = Vector2(960, -112)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes15" unique_id=1351462431]
 position = Vector2(0, 16)
@@ -446,7 +650,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 [node name="LargeSpikes16" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1595248298]
 position = Vector2(1392, -16)
 scale = Vector2(-1, -1)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes16" unique_id=1800802231]
 position = Vector2(0, 16)
@@ -455,7 +659,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 [node name="LargeSpikes17" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=1523814242]
 position = Vector2(1600, -144)
 scale = Vector2(-1, -1)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes17" unique_id=249152455]
 position = Vector2(0, 16)
@@ -464,7 +668,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 [node name="LargeSpikes18" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=342246532]
 position = Vector2(1472, -144)
 scale = Vector2(-1, -1)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes18" unique_id=1239074964]
 position = Vector2(0, 16)
@@ -473,7 +677,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 [node name="LargeSpikes19" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=798039063]
 position = Vector2(1360, -144)
 scale = Vector2(-1, -1)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes19" unique_id=245656558]
 position = Vector2(0, 16)
@@ -482,7 +686,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 [node name="LargeSpikes20" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=805275054]
 position = Vector2(1536, -144)
 scale = Vector2(-1, -1)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes20" unique_id=816855174]
 position = Vector2(0, 16)
@@ -491,7 +695,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 [node name="LargeSpikes21" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=680926533]
 position = Vector2(1584, -16)
 scale = Vector2(-1, -1)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes21" unique_id=265725451]
 position = Vector2(0, 16)
@@ -500,7 +704,7 @@ polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 1
 [node name="LargeSpikes22" type="Area2D" parent="Physical/Spikes/Right Dungeon Large" unique_id=761102613]
 position = Vector2(1552, -16)
 scale = Vector2(-1, -1)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Large/LargeSpikes22" unique_id=1613362905]
 position = Vector2(0, 16)
@@ -513,7 +717,7 @@ offset_bottom = 40.0
 
 [node name="SmallSpikes" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=944455487]
 position = Vector2(736, 24)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes" unique_id=2047326157]
 position = Vector2(0, 8)
@@ -521,7 +725,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes2" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1112174564]
 position = Vector2(752, 24)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes2" unique_id=1571277152]
 position = Vector2(0, 8)
@@ -529,7 +733,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes3" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1412630161]
 position = Vector2(768, 24)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes3" unique_id=731288448]
 position = Vector2(0, 8)
@@ -537,7 +741,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes4" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=947764481]
 position = Vector2(992, 24)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes4" unique_id=849137977]
 position = Vector2(0, 8)
@@ -545,7 +749,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes5" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=963142089]
 position = Vector2(1008, 24)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes5" unique_id=584297219]
 position = Vector2(0, 8)
@@ -553,7 +757,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes6" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1854118778]
 position = Vector2(1024, 24)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes6" unique_id=890505055]
 position = Vector2(0, 8)
@@ -561,7 +765,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes7" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=597814538]
 position = Vector2(1152, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes7" unique_id=1859138404]
 position = Vector2(0, 8)
@@ -569,7 +773,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes8" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1279521944]
 position = Vector2(1136, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes8" unique_id=1243909687]
 position = Vector2(0, 8)
@@ -577,7 +781,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes9" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=584174888]
 position = Vector2(1120, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes9" unique_id=541584311]
 position = Vector2(0, 8)
@@ -585,7 +789,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes10" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1842585332]
 position = Vector2(1216, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes10" unique_id=647239440]
 position = Vector2(0, 8)
@@ -593,7 +797,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes11" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1758430863]
 position = Vector2(1200, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes11" unique_id=779027300]
 position = Vector2(0, 8)
@@ -601,7 +805,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes12" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1207471520]
 position = Vector2(1184, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes12" unique_id=715444179]
 position = Vector2(0, 8)
@@ -609,7 +813,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes13" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1220355941]
 position = Vector2(1168, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes13" unique_id=1638604768]
 position = Vector2(0, 8)
@@ -617,7 +821,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes14" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1168796337]
 position = Vector2(1232, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes14" unique_id=282114007]
 position = Vector2(0, 8)
@@ -625,7 +829,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes15" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=959617028]
 position = Vector2(928, -64)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes15" unique_id=425791604]
 position = Vector2(0, 8)
@@ -633,7 +837,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes16" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1563382458]
 position = Vector2(1008, -120)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes16" unique_id=126361337]
 position = Vector2(0, 8)
@@ -641,7 +845,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes17" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=439398931]
 position = Vector2(1024, -120)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes17" unique_id=350929831]
 position = Vector2(0, 8)
@@ -649,7 +853,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes18" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=2022241691]
 position = Vector2(1168, -120)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes18" unique_id=85849139]
 position = Vector2(0, 8)
@@ -657,7 +861,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes19" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=925863730]
 position = Vector2(1152, -120)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes19" unique_id=671219043]
 position = Vector2(0, 8)
@@ -665,7 +869,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes20" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1050818611]
 position = Vector2(1136, -120)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes20" unique_id=1015609534]
 position = Vector2(0, 8)
@@ -673,7 +877,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes21" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1946813010]
 position = Vector2(1456, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes21" unique_id=1078540694]
 position = Vector2(0, 8)
@@ -681,7 +885,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes22" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=796389624]
 position = Vector2(1504, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes22" unique_id=193145621]
 position = Vector2(0, 8)
@@ -689,7 +893,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes24" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=381552279]
 position = Vector2(1408, 8)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes24" unique_id=1389509901]
 position = Vector2(0, 8)
@@ -697,7 +901,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes25" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=795225424]
 position = Vector2(1552, -120)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes25" unique_id=298165235]
 position = Vector2(0, 8)
@@ -705,7 +909,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="SmallSpikes27" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=1234758533]
 position = Vector2(1432, -120)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes27" unique_id=858564081]
 position = Vector2(0, 8)
@@ -714,7 +918,7 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 [node name="SmallSpikes29" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=530687327]
 position = Vector2(1408, -88)
 scale = Vector2(-1, -1)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes29" unique_id=69358435]
 position = Vector2(0, 8)
@@ -723,62 +927,206 @@ polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 [node name="SmallSpikes30" type="Area2D" parent="Physical/Spikes/Right Dungeon Small" unique_id=768292576]
 position = Vector2(1472, -88)
 scale = Vector2(-1, -1)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Right Dungeon Small/SmallSpikes30" unique_id=1716100255]
 position = Vector2(0, 8)
 polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
-[node name="SmallSpikes" type="Area2D" parent="Physical/Spikes" unique_id=1766252602]
+[node name="Left Large" type="Control" parent="Physical/Spikes" unique_id=1546424361]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LargeSpikes" type="Area2D" parent="Physical/Spikes/Left Large" unique_id=1773607657]
+position = Vector2(608, 0)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Large/LargeSpikes" unique_id=527559433]
+position = Vector2(0, 16)
+polygon = PackedVector2Array(7, -16, 9, -16, 16, 0, 0, 0)
+
+[node name="LargeSpikes2" type="Area2D" parent="Physical/Spikes/Left Large" unique_id=1699151925]
+position = Vector2(-656, -136)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Large/LargeSpikes2" unique_id=937005085]
+position = Vector2(0, 16)
+polygon = PackedVector2Array(7, -16, 9, -16, 16, 0, 0, 0)
+
+[node name="LargeSpikes3" type="Area2D" parent="Physical/Spikes/Left Large" unique_id=1147558343]
+position = Vector2(-848, -80)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Large/LargeSpikes3" unique_id=2114274588]
+position = Vector2(0, 16)
+polygon = PackedVector2Array(7, -16, 9, -16, 16, 0, 0, 0)
+
+[node name="LargeSpikes4" type="Area2D" parent="Physical/Spikes/Left Large" unique_id=1872349527]
+position = Vector2(-864, -80)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Large/LargeSpikes4" unique_id=630154672]
+position = Vector2(0, 16)
+polygon = PackedVector2Array(7, -16, 9, -16, 16, 0, 0, 0)
+
+[node name="LargeSpikes5" type="Area2D" parent="Physical/Spikes/Left Large" unique_id=176682733]
+position = Vector2(-336, -152)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Large/LargeSpikes5" unique_id=552304572]
+position = Vector2(0, 16)
+polygon = PackedVector2Array(7, -16, 9, -16, 16, 0, 0, 0)
+
+[node name="LargeSpikes6" type="Area2D" parent="Physical/Spikes/Left Large" unique_id=1589822106]
+position = Vector2(-368, -152)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Large/LargeSpikes6" unique_id=451327370]
+position = Vector2(0, 16)
+polygon = PackedVector2Array(7, -16, 9, -16, 16, 0, 0, 0)
+
+[node name="LargeSpikes7" type="Area2D" parent="Physical/Spikes/Left Large" unique_id=1354924689]
+position = Vector2(-448, -152)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Large/LargeSpikes7" unique_id=955024212]
+position = Vector2(0, 16)
+polygon = PackedVector2Array(7, -16, 9, -16, 16, 0, 0, 0)
+
+[node name="LargeSpikes8" type="Area2D" parent="Physical/Spikes/Left Large" unique_id=120398618]
+position = Vector2(-432, 0)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Large/LargeSpikes8" unique_id=327297741]
+position = Vector2(0, 16)
+polygon = PackedVector2Array(7, -16, 9, -16, 16, 0, 0, 0)
+
+[node name="Left Small" type="Control" parent="Physical/Spikes" unique_id=1889622403]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SmallSpikes" type="Area2D" parent="Physical/Spikes/Left Small" unique_id=2017333445]
 position = Vector2(-80, -72)
-script = ExtResource("4_12stj")
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Small/SmallSpikes" unique_id=171119302]
+position = Vector2(0, 8)
+polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
+
+[node name="SmallSpikes2" type="Area2D" parent="Physical/Spikes/Left Small" unique_id=1113425305]
+position = Vector2(-272, 24)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Small/SmallSpikes2" unique_id=928722815]
+position = Vector2(0, 8)
+polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
+
+[node name="SmallSpikes3" type="Area2D" parent="Physical/Spikes/Left Small" unique_id=1239838133]
+position = Vector2(-288, 24)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Small/SmallSpikes3" unique_id=13839030]
+position = Vector2(0, 8)
+polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
+
+[node name="SmallSpikes4" type="Area2D" parent="Physical/Spikes/Left Small" unique_id=1969798124]
+position = Vector2(-304, 24)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Small/SmallSpikes4" unique_id=1113481541]
+position = Vector2(0, 8)
+polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
+
+[node name="SmallSpikes5" type="Area2D" parent="Physical/Spikes/Left Small" unique_id=459288730]
+position = Vector2(-664, 8)
+script = ExtResource("9_jq2sk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/Left Small/SmallSpikes5" unique_id=1712439460]
+position = Vector2(0, 8)
+polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
+
+[node name="SmallSpikes" type="Area2D" parent="Physical/Spikes" unique_id=1766252602]
+position = Vector2(-576, 8)
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/SmallSpikes" unique_id=321678902]
 position = Vector2(0, 8)
 polygon = PackedVector2Array(0, -3, 2, -8, 13, -8, 16, -2, 16, 0, 0, 0)
 
 [node name="LargeSpikes" type="Area2D" parent="Physical/Spikes" unique_id=211099394]
-position = Vector2(608, 0)
-script = ExtResource("4_12stj")
+position = Vector2(-800, 0)
+script = ExtResource("9_jq2sk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Spikes/LargeSpikes" unique_id=221583299]
 position = Vector2(0, 16)
-polygon = PackedVector2Array(0, 0, 0, 0, 7, -16, 9, -16, 12.391098, -8.248932, 16, 0)
+polygon = PackedVector2Array(7, -16, 9, -16, 16, 0, 0, 0)
 
 [node name="Dissapear" type="Control" parent="Physical" unique_id=1680166447]
 anchors_preset = 0
-offset_top = -8.0
-offset_right = 40.0
-offset_bottom = 32.0
-script = ExtResource("7_17b22")
+offset_left = 8.0
+offset_top = -16.0
+offset_right = 48.0
+offset_bottom = 24.0
+script = ExtResource("10_4k2k6")
 
 [node name="Forge Temp Ceiling" type="StaticBody2D" parent="Physical/Dissapear" unique_id=1081375073]
-
-[node name="ForgeInvisDis" type="Sprite2D" parent="Physical/Dissapear/Forge Temp Ceiling" unique_id=812659472]
-texture = ExtResource("3_12stj")
+position = Vector2(-8, 8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Physical/Dissapear/Forge Temp Ceiling" unique_id=1006649880]
 position = Vector2(0, -48)
 shape = SubResource("RectangleShape2D_2ql80")
 
+[node name="ForgeInvisDis" type="Sprite2D" parent="Physical/Dissapear/Forge Temp Ceiling" unique_id=812659472]
+texture = ExtResource("11_0rl1p")
+
 [node name="Right" type="StaticBody2D" parent="Physical/Dissapear" unique_id=729228784]
 position = Vector2(80, -8)
 
 [node name="RightDungeonInvisDis" type="Sprite2D" parent="Physical/Dissapear/Right" unique_id=166541261]
-position = Vector2(800, -64)
-texture = ExtResource("8_s6frn")
+position = Vector2(792, -56)
+texture = ExtResource("12_ok6jj")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Dissapear/Right" unique_id=1495232360]
+position = Vector2(-8, 8)
 polygon = PackedVector2Array(480, -128, 528, -128, 528, -160, 512, -160, 512, -136, 480, -136)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Dissapear/Right" unique_id=56104428]
+position = Vector2(-8, 8)
 polygon = PackedVector2Array(1536, -144, 1584, -144, 1584, -160, 1536, -160)
 
+[node name="LeftDungeonDis" type="Sprite2D" parent="Physical/Dissapear" unique_id=666316693]
+position = Vector2(-488, -64)
+texture = ExtResource("13_facbu")
+
+[node name="Well" type="StaticBody2D" parent="Physical/Dissapear" unique_id=1046944912]
+
+[node name="WellDis" type="Sprite2D" parent="Physical/Dissapear/Well" unique_id=2096353301]
+position = Vector2(-8, -248)
+texture = ExtResource("14_b1qrp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Dissapear/Well" unique_id=722117498]
+polygon = PackedVector2Array(-40, -432, -40, -448, 24, -448, 24, -432)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Dissapear/Well" unique_id=1573615053]
+polygon = PackedVector2Array(-24, -304, -24, -336, -8, -336, -8, -304)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Physical/Dissapear/Well" unique_id=449464430]
+polygon = PackedVector2Array(8, -208, 8, -224, 24, -224, 24, -208)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Physical/Dissapear/Well" unique_id=2073882681]
+polygon = PackedVector2Array(-40, -192, -24, -192, -24, -176, -40, -176)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Dissapear/Well/CollisionPolygon2D4" unique_id=474493500]
+polygon = PackedVector2Array(-40, -96, -24, -96, -24, -80, -40, -80)
+
 [node name="Appear" type="Control" parent="Physical" unique_id=1880508174]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("10_a7188")
+script = ExtResource("15_come4")
 
 [node name="Forge platform appear" type="StaticBody2D" parent="Physical/Appear" unique_id=1528118556]
 
@@ -788,20 +1136,75 @@ shape = SubResource("RectangleShape2D_o4e3p")
 
 [node name="ForgeInvisApp" type="Sprite2D" parent="Physical/Appear/Forge platform appear" unique_id=1402633612]
 position = Vector2(0, -8)
-texture = ExtResource("4_1bkxr")
+texture = ExtResource("16_h8e4i")
 
 [node name="Right" type="StaticBody2D" parent="Physical/Appear" unique_id=776145372]
 position = Vector2(80, -16)
 
 [node name="RightDungeonInvisApp" type="Sprite2D" parent="Physical/Appear/Right" unique_id=1165460936]
 position = Vector2(800, -64)
-texture = ExtResource("10_6bclg")
+texture = ExtResource("17_4lmeg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Appear/Right" unique_id=570199552]
 polygon = PackedVector2Array(1536, -96, 1536, -144, 1520, -144, 1520, -96)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Appear/Right" unique_id=1717898361]
 polygon = PackedVector2Array(1568, -128, 1584, -128, 1584, -120, 1568, -120)
+
+[node name="Left" type="StaticBody2D" parent="Physical/Appear" unique_id=390717874]
+position = Vector2(-80, -16)
+
+[node name="LeftDungeonApp" type="Sprite2D" parent="Physical/Appear/Left" unique_id=94474905]
+position = Vector2(-400, -64)
+texture = ExtResource("18_0cp0l")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=371961390]
+polygon = PackedVector2Array(-256, 32, -256, -16, -272, -16, -272, 32, -264, 32)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=119589869]
+polygon = PackedVector2Array(-336, 16, -336, 0, -352, 0, -352, 16)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=1077903840]
+polygon = PackedVector2Array(-432, -32, -432, -64, -448, -64, -448, -32)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=869302241]
+polygon = PackedVector2Array(-496, -80, -496, -96, -512, -96, -512, -80)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=986093224]
+polygon = PackedVector2Array(-576, -32, -576, -48, -592, -48, -592, -32)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=74850568]
+polygon = PackedVector2Array(-656, -32, -656, -48, -672, -48, -672, -32)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=841074712]
+polygon = PackedVector2Array(-672, -80, -720, -80, -720, -96, -672, -96)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=1578531721]
+polygon = PackedVector2Array(-416, -120, -416, -136, -400, -136, -400, -120)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=1852268259]
+polygon = PackedVector2Array(-192, -96, -192, -112, -160, -112, -160, -96)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=386663219]
+polygon = PackedVector2Array(-112, -112, -112, -160, -96, -160, -96, -112)
+
+[node name="Well" type="StaticBody2D" parent="Physical/Appear" unique_id=342793064]
+
+[node name="WellApp" type="Sprite2D" parent="Physical/Appear/Well" unique_id=1755883758]
+position = Vector2(0, -264)
+texture = ExtResource("19_d2t1y")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=2130994077]
+polygon = PackedVector2Array(32, -144, 32, -160, 16, -160, 16, -144)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=1898753962]
+polygon = PackedVector2Array(16, -224, 16, -256, 0, -256, 0, -224)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=1620523677]
+polygon = PackedVector2Array(0, -256, 0, -288, 16, -288, 16, -256)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Physical/Appear/Well" unique_id=1466917815]
+polygon = PackedVector2Array(16, -384, 16, -400, 32, -400, 32, -384)
 
 [node name="masks" type="Control" parent="." unique_id=216794249]
 anchors_preset = 0
@@ -810,15 +1213,79 @@ offset_bottom = 40.0
 
 [node name="Left" type="Area2D" parent="masks" unique_id=744341757]
 position = Vector2(1640, -128)
-script = ExtResource("11_e4kmn")
+script = ExtResource("20_gngh3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="masks/Left" unique_id=49277162]
 shape = SubResource("RectangleShape2D_17b22")
 
 [node name="MaskLeft" type="Sprite2D" parent="masks/Left" unique_id=186006526]
-texture = ExtResource("14_a7188")
+texture = ExtResource("21_0n3wm")
 
-[node name="Knight" parent="." unique_id=1608240896 instance=ExtResource("1_o3k3h")]
+[node name="Right" type="Area2D" parent="masks" unique_id=38860555]
+position = Vector2(-128, -160)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="masks/Right" unique_id=681646782]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_34ydo")
+
+[node name="MaskRight" type="Sprite2D" parent="masks/Right" unique_id=1575453593]
+position = Vector2(0, 16)
+texture = ExtResource("23_wnkbs")
+
+[node name="Checkpoints" type="Control" parent="." unique_id=1458613381]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Anvil" type="Area2D" parent="Checkpoints" unique_id=640852864]
+position = Vector2(0, -8)
+script = ExtResource("24_f6a44")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Anvil" unique_id=824620698]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_6s67a")
+
+[node name="Right1" type="Area2D" parent="Checkpoints" unique_id=391586201]
+position = Vector2(576, -120)
+script = ExtResource("24_f6a44")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Right1" unique_id=1231287599]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_6s67a")
+
+[node name="RightMask" type="Area2D" parent="Checkpoints" unique_id=220803883]
+position = Vector2(1640, -136)
+script = ExtResource("24_f6a44")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/RightMask" unique_id=400826755]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_6s67a")
+
+[node name="Right2" type="Area2D" parent="Checkpoints" unique_id=776085705]
+position = Vector2(1296, -8)
+script = ExtResource("24_f6a44")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Right2" unique_id=55736166]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_6s67a")
+
+[node name="Left1" type="Area2D" parent="Checkpoints" unique_id=1038024611]
+position = Vector2(-816, -88)
+script = ExtResource("24_f6a44")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Left1" unique_id=938165238]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_6s67a")
+
+[node name="LeftMask" type="Area2D" parent="Checkpoints" unique_id=1740618829]
+position = Vector2(-128, -152)
+script = ExtResource("24_f6a44")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/LeftMask" unique_id=559534715]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_6s67a")
+
+[node name="Knight" parent="." unique_id=1608240896 instance=ExtResource("20_82xsv")]
 
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Large/LargeSpikes2" to="Physical/Spikes/Right Dungeon Large/LargeSpikes2" method="_on_body_entered"]
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Large/LargeSpikes" to="Physical/Spikes/Right Dungeon Large/LargeSpikes" method="_on_body_entered"]
@@ -869,6 +1336,26 @@ texture = ExtResource("14_a7188")
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Small/SmallSpikes27" to="Physical/Spikes/Right Dungeon Small/SmallSpikes27" method="_on_body_entered"]
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Small/SmallSpikes29" to="Physical/Spikes/Right Dungeon Small/SmallSpikes29" method="_on_body_entered"]
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Small/SmallSpikes30" to="Physical/Spikes/Right Dungeon Small/SmallSpikes30" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Large/LargeSpikes" to="Physical/Spikes/Left Large/LargeSpikes" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Large/LargeSpikes2" to="Physical/Spikes/Left Large/LargeSpikes2" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Large/LargeSpikes3" to="Physical/Spikes/Left Large/LargeSpikes3" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Large/LargeSpikes4" to="Physical/Spikes/Left Large/LargeSpikes4" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Large/LargeSpikes5" to="Physical/Spikes/Left Large/LargeSpikes5" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Large/LargeSpikes6" to="Physical/Spikes/Left Large/LargeSpikes6" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Large/LargeSpikes7" to="Physical/Spikes/Left Large/LargeSpikes7" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Large/LargeSpikes8" to="Physical/Spikes/Left Large/LargeSpikes8" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Small/SmallSpikes" to="Physical/Spikes/Left Small/SmallSpikes" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Small/SmallSpikes2" to="Physical/Spikes/Left Small/SmallSpikes2" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Small/SmallSpikes3" to="Physical/Spikes/Left Small/SmallSpikes3" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Small/SmallSpikes4" to="Physical/Spikes/Left Small/SmallSpikes4" method="_on_body_entered"]
+[connection signal="body_entered" from="Physical/Spikes/Left Small/SmallSpikes5" to="Physical/Spikes/Left Small/SmallSpikes5" method="_on_body_entered"]
 [connection signal="body_entered" from="Physical/Spikes/SmallSpikes" to="Physical/Spikes/SmallSpikes" method="_on_body_entered"]
 [connection signal="body_entered" from="Physical/Spikes/LargeSpikes" to="Physical/Spikes/LargeSpikes" method="_on_body_entered"]
 [connection signal="body_entered" from="masks/Left" to="masks/Left" method="_on_body_entered"]
+[connection signal="body_entered" from="masks/Right" to="masks/Right" method="_on_body_entered"]
+[connection signal="body_entered" from="Checkpoints/Anvil" to="Checkpoints/Anvil" method="_on_body_entered"]
+[connection signal="body_entered" from="Checkpoints/Right1" to="Checkpoints/Right1" method="_on_body_entered"]
+[connection signal="body_entered" from="Checkpoints/RightMask" to="Checkpoints/RightMask" method="_on_body_entered"]
+[connection signal="body_entered" from="Checkpoints/Right2" to="Checkpoints/Right2" method="_on_body_entered"]
+[connection signal="body_entered" from="Checkpoints/Left1" to="Checkpoints/Left1" method="_on_body_entered"]
+[connection signal="body_entered" from="Checkpoints/LeftMask" to="Checkpoints/LeftMask" method="_on_body_entered"]
