@@ -10,10 +10,16 @@
 
 [ext_resource type="Texture2D" uid="uid://ca2ul22j8xm63" path="res://BackgroundImages/Background.png" id="1_0odxb"]
 [ext_resource type="Shader" uid="uid://ctrgk5irbhah1" path="res://fog.gdshader" id="2_lswn8"]
+<<<<<<< HEAD
 >>>>>>> liam
 [ext_resource type="Texture2D" uid="uid://dn3gg0uerfjm" path="res://Images/anvil.png" id="4_xuqvo"]
 [ext_resource type="Texture2D" uid="uid://brf0t3bab8f73" path="res://Blocks/forge-foreground.png" id="5_qsp4k"]
 [ext_resource type="Texture2D" uid="uid://dua0mxb1lai68" path="res://Images/right-dungeonv2.png" id="6_kq58d"]
+=======
+[ext_resource type="Texture2D" uid="uid://cly8fh5peye0v" path="res://Images/Forge.png" id="3_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://5plvtpth8hh5" path="res://Images/well-back.png" id="3_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://cpa56srbwlmmx" path="res://Images/right-dungeon.png" id="4_xuqvo"]
+>>>>>>> liam
 [ext_resource type="Texture2D" uid="uid://ru0svbi7fypq" path="res://Images/left-dungeon.png" id="7_seu75"]
 [ext_resource type="Texture2D" uid="uid://b40kjit2vg4ah" path="res://Images/well.png" id="8_htxhm"]
 [ext_resource type="Script" uid="uid://6xwtn08ttbb7" path="res://death.gd" id="9_jq2sk"]
@@ -60,8 +66,18 @@
 [ext_resource type="PackedScene" uid="uid://c0ojkm3pkvv4e" path="res://Knight.tscn" id="20_82xsv"]
 [ext_resource type="Script" uid="uid://dubx8gg54tp2o" path="res://leftmask.gd" id="20_gngh3"]
 [ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="21_0n3wm"]
+[ext_resource type="Script" uid="uid://dfbbidsv6fhu7" path="res://rightmask.gd" id="21_kq58d"]
+[ext_resource type="Texture2D" uid="uid://djlq3p2nnywmf" path="res://Images/outside.png" id="23_qsp4k"]
 [ext_resource type="Texture2D" uid="uid://c8rtv08of7mw7" path="res://Images/mask-right.png" id="23_wnkbs"]
+[ext_resource type="AudioStream" uid="uid://c16c4w263lgvv" path="res://masktrack.mp3" id="24_1u8w0"]
 [ext_resource type="Script" uid="uid://dgibjectrw5mq" path="res://Checkpoint.gd" id="24_f6a44"]
+<<<<<<< HEAD
+>>>>>>> liam
+=======
+[ext_resource type="Texture2D" uid="uid://cawa2gklais4g" path="res://Blocks/1x1brick.png" id="24_kq58d"]
+[ext_resource type="Script" uid="uid://xjgij0j3blfp" path="res://exit.gd" id="25_0odxb"]
+[ext_resource type="Script" uid="uid://crigbxu0v07xq" path="res://end collide.gd" id="26_lswn8"]
+[ext_resource type="Theme" uid="uid://d3wsb20gl24s4" path="res://theme.tres" id="29_qsp4k"]
 >>>>>>> liam
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2ql80"]
@@ -103,6 +119,46 @@ size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6s67a"]
 size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lswn8"]
+size = Vector2(16, 168)
+
+[sub_resource type="Animation" id="Animation_lswn8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_a6jrf"]
+resource_name = "fade_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.03333333, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xuqvo"]
+_data = {
+&"RESET": SubResource("Animation_lswn8"),
+&"fade_in": SubResource("Animation_a6jrf")
+}
 
 [node name="Control" type="Control" unique_id=900830038]
 layout_mode = 3
@@ -326,9 +382,13 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Anvil" type="Sprite2D" parent="Foreground" unique_id=1456085685]
-position = Vector2(0, 8)
-texture = ExtResource("4_xuqvo")
+[node name="Label" type="Label" parent="Foreground" unique_id=1330818774]
+layout_mode = 0
+offset_left = 1336.0
+offset_top = -200.0
+offset_right = 1580.0
+offset_bottom = -177.0
+text = "Press Shift to Show/Hide Blocks"
 
 [node name="BlackBorder" type="ColorRect" parent="Foreground" unique_id=912095797]
 layout_mode = 0
@@ -385,6 +445,10 @@ offset_right = 1952.0
 offset_bottom = -464.0
 color = Color(0, 0.9529412, 1, 1)
 
+[node name="WellBack" type="Sprite2D" parent="Foreground" unique_id=1168026981]
+position = Vector2(400, -544)
+texture = ExtResource("3_xuqvo")
+
 [node name="Physical" type="Control" parent="." unique_id=192658643]
 anchors_preset = 0
 offset_right = 40.0
@@ -397,7 +461,7 @@ offset_bottom = 40.0
 
 [node name="ForgeForeground" type="Sprite2D" parent="Physical/Forge" unique_id=1502927766]
 position = Vector2(0, -8)
-texture = ExtResource("5_qsp4k")
+texture = ExtResource("3_a6jrf")
 
 [node name="Forge Floor" type="StaticBody2D" parent="Physical/Forge" unique_id=289335486]
 position = Vector2(0, 16)
@@ -424,7 +488,7 @@ position = Vector2(80, -16)
 
 [node name="RightDungeonv2" type="Sprite2D" parent="Physical/Right/Right Dungeon" unique_id=1662448022]
 position = Vector2(800, -64)
-texture = ExtResource("6_kq58d")
+texture = ExtResource("4_xuqvo")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Right/Right Dungeon" unique_id=861600416]
 polygon = PackedVector2Array(0, 32, 416, 32, 416, 16, 432, 16, 432, -32, 464, -32, 464, -56, 448, -56, 448, -64, 464, -64, 464, -80, 528, -80, 528, -48, 560, -48, 560, -40, 528, -40, 528, 0, 560, 0, 560, 8, 528, 8, 528, 32, 529.68915, 32, 656, 32, 656, 48, 704, 48, 704, 32, 912, 32, 912, 48, 960, 48, 960, 32, 1168, 32, 1168, 16, 1184, 16, 1184, 32, 1584, 32, 1584, 0, 1568, 0, 1568, -8, 1584, -8, 1584, -80, 1280, -80, 1280, -88, 1296, -88, 1296, -96, 1584, -96, 1584, -272, 1600, -192, 1600, 64, 0, 64)
@@ -575,10 +639,13 @@ position = Vector2(0, -264)
 texture = ExtResource("8_htxhm")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Physical/Well/StaticBody2D" unique_id=127892027]
-polygon = PackedVector2Array(-32, -64, -32, -88, -16, -88, -16, -96, -32, -96, -32, -304, -16, -304, -16, -312, -32, -312, -32, -424, -16, -424, -16, -432, -32, -432, -32, -464, -48, -464, -48, -64)
+polygon = PackedVector2Array(-32, -64, -32, -88, -16, -88, -16, -96, -32, -96, -32, -304, -16, -304, -16, -312, -32, -312, -32, -424, -16, -424, -16, -432, -32, -432, -32, -512, -48, -512, -48, -496, -408, -496, -408, -632, -432, -632, -432, -496, -432, -480, -48, -479.13882, -48, -64)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Physical/Well/StaticBody2D" unique_id=58433931]
-polygon = PackedVector2Array(32, -64, 32, -136, 16, -136, 16, -144, 32, -144, 32, -464, 48, -464, 48, -64)
+polygon = PackedVector2Array(32, -64, 32, -136, 16, -136, 16, -144, 32, -144, 32, -512, 48, -512, 48, -496, 360, -496, 360, -672, 392, -672, 392, -496, 872, -496, 872, -488, 48, -488, 48, -64)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Physical/Well/StaticBody2D" unique_id=1304359543]
+polygon = PackedVector2Array(-32, -560, -48, -560, -48, -576, -16, -608, 16, -608, 48, -576, 48, -560, 32, -560, 32, -576, -32, -576)
 
 [node name="Spikes" type="Control" parent="Physical" unique_id=141075846]
 anchors_preset = 0
@@ -1186,7 +1253,6 @@ polygon = PackedVector2Array(-40, -96, -24, -96, -24, -80, -40, -80)
 
 >>>>>>> liam
 [node name="Appear" type="Control" parent="Physical" unique_id=1880508174]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -1229,16 +1295,13 @@ polygon = PackedVector2Array(-256, 32, -256, -16, -272, -16, -272, 32, -264, 32)
 polygon = PackedVector2Array(-336, 16, -336, 0, -352, 0, -352, 16)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=1077903840]
-polygon = PackedVector2Array(-432, -32, -432, -64, -448, -64, -448, -32)
+polygon = PackedVector2Array(-432, -32, -432, -80, -448, -80, -448, -32)
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=869302241]
 polygon = PackedVector2Array(-496, -80, -496, -96, -512, -96, -512, -80)
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=986093224]
-polygon = PackedVector2Array(-576, -32, -576, -48, -592, -48, -592, -32)
-
-[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=74850568]
-polygon = PackedVector2Array(-656, -32, -656, -48, -672, -48, -672, -32)
+polygon = PackedVector2Array(-576, -32, -576, -64, -592, -64, -592, -32)
 
 [node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Physical/Appear/Left" unique_id=841074712]
 polygon = PackedVector2Array(-672, -80, -720, -80, -720, -96, -672, -96)
@@ -1305,10 +1368,14 @@ texture = ExtResource("21_0n3wm")
 <<<<<<<< HEAD:main.tscn
 [node name="Right" type="Area2D" parent="masks" unique_id=38860555]
 position = Vector2(-128, -160)
+<<<<<<< HEAD
 script = ExtResource("22_qnost")
 =======
 [node name="Right" type="Area2D" parent="masks" unique_id=38860555]
 position = Vector2(-128, -160)
+>>>>>>> liam
+=======
+script = ExtResource("21_kq58d")
 >>>>>>> liam
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="masks/Right" unique_id=681646782]
@@ -1384,6 +1451,93 @@ jumpvel = -175
 [node name="Knight" parent="." unique_id=1608240896 instance=ExtResource("20_82xsv")]
 >>>>>>> liam
 
+[node name="Top" type="Control" parent="." unique_id=315559928]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Outside" type="Sprite2D" parent="Top" unique_id=151444640]
+position = Vector2(400, -544)
+texture = ExtResource("23_qsp4k")
+
+[node name="1x1Brick" type="Sprite2D" parent="Top" unique_id=858509375]
+position = Vector2(-24, -504)
+texture = ExtResource("24_kq58d")
+
+[node name="1x1Brick2" type="Sprite2D" parent="Top" unique_id=334575109]
+position = Vector2(-8, -504)
+texture = ExtResource("24_kq58d")
+
+[node name="1x1Brick3" type="Sprite2D" parent="Top" unique_id=2012449805]
+position = Vector2(8, -504)
+texture = ExtResource("24_kq58d")
+
+[node name="1x1Brick4" type="Sprite2D" parent="Top" unique_id=1657909170]
+position = Vector2(24, -504)
+texture = ExtResource("24_kq58d")
+
+[node name="1x1Brick5" type="Sprite2D" parent="Top" unique_id=1064942430]
+position = Vector2(-24, -488)
+texture = ExtResource("24_kq58d")
+
+[node name="1x1Brick6" type="Sprite2D" parent="Top" unique_id=517298801]
+position = Vector2(-8, -488)
+texture = ExtResource("24_kq58d")
+
+[node name="1x1Brick7" type="Sprite2D" parent="Top" unique_id=1501950239]
+position = Vector2(8, -488)
+texture = ExtResource("24_kq58d")
+
+[node name="1x1Brick8" type="Sprite2D" parent="Top" unique_id=1854000544]
+position = Vector2(24, -488)
+texture = ExtResource("24_kq58d")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=50030841]
+stream = ExtResource("24_1u8w0")
+volume_db = -10.536
+autoplay = true
+
+[node name="EndScene" type="Control" parent="." unique_id=1889424638]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("25_0odxb")
+
+[node name="Area2D" type="Area2D" parent="EndScene" unique_id=1079098115]
+position = Vector2(0, -480)
+script = ExtResource("26_lswn8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EndScene/Area2D" unique_id=717077814]
+position = Vector2(-72, -100)
+shape = SubResource("RectangleShape2D_lswn8")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="EndScene/Area2D" unique_id=721110312]
+position = Vector2(72, -96)
+shape = SubResource("RectangleShape2D_lswn8")
+
+[node name="ColorRect" type="ColorRect" parent="EndScene" unique_id=775573970]
+visible = false
+layout_mode = 0
+offset_left = -4080.0
+offset_top = -2680.0
+offset_right = 4288.0
+offset_bottom = 1984.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="EndScene" unique_id=93882809]
+libraries/ = SubResource("AnimationLibrary_xuqvo")
+
+[node name="Label" type="Label" parent="." unique_id=587888738]
+layout_mode = 0
+offset_left = -72.0
+offset_top = -560.0
+offset_right = 66.0
+offset_bottom = -528.0
+theme = ExtResource("29_qsp4k")
+text = "Deaths: 0"
+
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Large/LargeSpikes2" to="Physical/Spikes/Right Dungeon Large/LargeSpikes2" method="_on_body_entered"]
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Large/LargeSpikes" to="Physical/Spikes/Right Dungeon Large/LargeSpikes" method="_on_body_entered"]
 [connection signal="body_entered" from="Physical/Spikes/Right Dungeon Large/LargeSpikes3" to="Physical/Spikes/Right Dungeon Large/LargeSpikes3" method="_on_body_entered"]
@@ -1456,3 +1610,4 @@ jumpvel = -175
 [connection signal="body_entered" from="Checkpoints/Right2" to="Checkpoints/Right2" method="_on_body_entered"]
 [connection signal="body_entered" from="Checkpoints/Left1" to="Checkpoints/Left1" method="_on_body_entered"]
 [connection signal="body_entered" from="Checkpoints/LeftMask" to="Checkpoints/LeftMask" method="_on_body_entered"]
+[connection signal="body_entered" from="EndScene/Area2D" to="EndScene/Area2D" method="_on_body_entered"]

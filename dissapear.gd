@@ -11,13 +11,27 @@ func showBlocks():
 				if child is CollisionPolygon2D or child is CollisionShape2D:
 					child.disabled = false
 	
+	for shape in get_children():
+		if shape is StaticBody2D:
+			for child in shape.get_children():
+				if child is CollisionShape2D or child is CollisionPolygon2D:
+					child.disabled = false
+	
 func hideBlocks():
 	visible = false
 	set_physics_process(false)
 	set_process(false)
 	set_process_input(false)
+<<<<<<< HEAD
 	for shape in self.get_children():
 		if shape is StaticBody2D:
 			for child in shape.get_children():
 				if child is CollisionPolygon2D or child is CollisionShape2D:
+=======
+	
+	for shape in get_children():
+		if shape is StaticBody2D:
+			for child in shape.get_children():
+				if child is CollisionShape2D or child is CollisionPolygon2D:
+>>>>>>> liam
 					child.disabled = true

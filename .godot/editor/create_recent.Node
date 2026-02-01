@@ -1,19 +1,32 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Label
 ColorRect
 =======
+=======
+Label
+CanvasLayer
+RichTextLabel
+HBoxContainer
+ColorRect
+>>>>>>> liam
 CollisionPolygon2D
+AnimationPlayer
 CollisionShape2D
 Area2D
 >>>>>>> liam
 Control
+AudioStreamPlayer
 StaticBody2D
 CollisionShape2D
 Area2D
 Polygon2D
 TextureRect
+<<<<<<< HEAD
 ParallaxLayer
 ParallaxBackground
 Parallax2D
 Marker2D
 PointLight2D
+=======
+>>>>>>> liam

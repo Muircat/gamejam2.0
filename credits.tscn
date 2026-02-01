@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cxoiod224w2bj"]
+
+[ext_resource type="Theme" uid="uid://d3wsb20gl24s4" path="res://theme.tres" id="1_nm7lk"]
+
+[node name="Credits" type="Node2D" unique_id=1648704487]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2004227948]
+offset_top = 8.0
+offset_right = 704.0
+offset_bottom = 504.0
+color = Color(0, 0, 0, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect" unique_id=1110331905]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = -144.0
+offset_right = 320.0
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_nm7lk")
+theme_override_constants/separation = 5
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1401871838]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 80.0
+offset_right = 220.0
+offset_bottom = 147.0
+theme = ExtResource("1_nm7lk")
+text = "Did a bit: 
+Rafe Murchie"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect" unique_id=1816220326]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 184.0
+offset_right = 443.0
+offset_bottom = 251.0
+theme = ExtResource("1_nm7lk")
+text = "Did another bit:
+Calum Dickson"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="ColorRect" unique_id=781597786]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 288.0
+offset_right = 665.0
+offset_bottom = 355.0
+theme = ExtResource("1_nm7lk")
+text = "Did some more:
+Liam Barnes"
+horizontal_alignment = 1

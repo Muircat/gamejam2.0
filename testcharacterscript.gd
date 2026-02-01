@@ -6,6 +6,8 @@ extends CharacterBody2D
 @export var jumpvel := -175
 @export var mask := 0
 @export var respawnpos:=Vector2(0,0)
+@onready var deathcounter: Label = $"../Label"
+var counter = 0
 
 #player progress
 var jump = true
@@ -31,11 +33,13 @@ var faceway := 1
 func respawn():
 	deaths.died()
 	self.global_position = respawnpos
+	counter += 1
+	deathcounter.text = "Deaths: "+str(counter)
 
 func _ready():
 	set_process_input(true) 
 	on.hideBlocks()
-	print("Ready")
+	deathcounter.text = "Deaths: 0"
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -91,11 +95,18 @@ func switchLeftMask():
 func getRightMask():
 	pass
 	rightMask = true
+<<<<<<< HEAD
+=======
+	leftMask = false
+>>>>>>> liam
 	bases = ["right"+bases[0],"right"+bases[1],"right"+bases[2]]
 	active = ["left"+bases[0],"left"+bases[1],"left"+bases[2]]
+	call_deferred("switchLeftMask")
+	
 
 func getLeftMask():
 	hasleftmask = true
+<<<<<<< HEAD
 <<<<<<< HEAD
 	leftMask = true
 	active = ["left"+bases[0],"left"+bases[1],"left"+bases[2]]
@@ -106,6 +117,9 @@ func setRespawn(pos):
 	self.respawnpos = pos
 =======
 	switchLeftMask()
+=======
+	call_deferred("switchLeftMask")
+>>>>>>> liam
 
 func setRespawn(pos):
 	self.respawnpos = pos
