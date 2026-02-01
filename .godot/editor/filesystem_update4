@@ -8,3 +8,6 @@ res://fog.gdshader
 res://large_spike.tscn
 res://SmallSpikes.tscn
 res://knighthalfmask.tscn
+res://leftmask.gd
+res://dissapear.gd
+res://appear.gd
