@@ -9,9 +9,9 @@ extends CharacterBody2D
 
 #player progress
 var jump = true
-var hasleftmask = false
+var hasleftmask = true
 var leftMask = false
-var rightMask = false
+var rightMask = true
 var shiftpressed = false
 
 #animation data
@@ -25,7 +25,11 @@ var faceway := 1
 @onready var on: Control = $"../Physical/Appear"
 @onready var off: Control = $"../Physical/Dissapear"
 
+#counters
+@onready var deaths = $"Death Counter"
+
 func respawn():
+	deaths.died()
 	self.global_position = respawnpos
 
 func _ready():
@@ -86,10 +90,15 @@ func switchLeftMask():
 func getRightMask():
 	pass
 	rightMask = true
-	leftMask = true
 	bases = ["right"+bases[0],"right"+bases[1],"right"+bases[2]]
 	active = ["left"+bases[0],"left"+bases[1],"left"+bases[2]]
 
 func getLeftMask():
 	hasleftmask = true
-	switchLeftMask()
+	leftMask = true
+	active = ["left"+bases[0],"left"+bases[1],"left"+bases[2]]
+	on.call_deferred("showBlocks")
+	off.call_deferred("hideBlocks")
+
+func setRespawn(pos):
+	self.respawnpos = pos

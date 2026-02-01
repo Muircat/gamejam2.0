@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://xsh4xqry0fdw"]
+[gd_scene format=3 uid="uid://qwtxeftkrrjg"]
 
 [ext_resource type="Script" uid="uid://bxjrgqessybs0" path="res://testcharacterscript.gd" id="1_ax8rn"]
 [ext_resource type="Texture2D" uid="uid://cy0uo4wm8et0" path="res://chknightspritesheet.png" id="2_bli87"]
@@ -119,7 +119,6 @@ shape = SubResource("RectangleShape2D_qb6j1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1628654823]
 sprite_frames = SubResource("SpriteFrames_nlga5")
 animation = &"idlehalfmask"
-frame_progress = 0.65843517
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1621685995]
 zoom = Vector2(4, 4)

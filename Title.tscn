@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://nxxsv6ye6f3d"]
+
+[ext_resource type="Texture2D" uid="uid://i5y1ns5jjgcl" path="res://Images/mask-left.png" id="1_ax32a"]
+[ext_resource type="Texture2D" uid="uid://c8rtv08of7mw7" path="res://Images/mask-right.png" id="2_quvj1"]
+
+[node name="Control" type="Control" unique_id=290522133]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 234.0
+offset_top = 97.0
+offset_right = 274.0
+offset_bottom = 137.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2055516883]
+layout_mode = 0
+offset_left = -238.0
+offset_top = -99.0
+offset_right = 466.0
+offset_bottom = 408.0
+color = Color(0, 0, 0, 1)
+
+[node name="MaskLeft" type="Sprite2D" parent="." unique_id=735654038]
+position = Vector2(-50, 37.416)
+scale = Vector2(20, 16.552)
+texture = ExtResource("1_ax32a")
+
+[node name="MaskRight" type="Sprite2D" parent="." unique_id=477969666]
+position = Vector2(270.00003, 37.416)
+scale = Vector2(20, 16.552)
+texture = ExtResource("2_quvj1")
+
+[node name="Label" type="Label" parent="." unique_id=308675149]
+layout_mode = 0
+offset_left = -34.0
+offset_top = 150.0
+offset_right = 296.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 92
+text = "MASK"
+
+[node name="Label2" type="Label" parent="." unique_id=1834891763]
+layout_mode = 0
+offset_left = -90.0
+offset_top = 298.0
+offset_right = 311.0
+offset_bottom = 357.0
+theme_override_font_sizes/font_size = 43
+text = "Press Space to Start"

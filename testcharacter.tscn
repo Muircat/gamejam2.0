@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bxjrgqessybs0" path="res://testcharacterscript.gd" id="1_exmxo"]
 [ext_resource type="Texture2D" uid="uid://cy0uo4wm8et0" path="res://chknightspritesheet.png" id="2_exmxo"]
 [ext_resource type="Texture2D" uid="uid://b7j8en5csb4s" path="res://chknightmaskhalf.png" id="3_qw0o3"]
+[ext_resource type="Script" uid="uid://cawhojy2sohlb" path="res://DeathCounter.gd" id="4_qb6j1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qb6j1"]
 size = Vector2(12, 19)
@@ -122,6 +123,14 @@ script = ExtResource("1_exmxo")
 speed = 100
 gravity = 400
 jumpvel = -140
+
+[node name="Death Counter" type="Label" parent="." unique_id=1696958546]
+visible = false
+offset_left = 40.0
+offset_top = -56.0
+offset_right = 80.0
+offset_bottom = -33.0
+script = ExtResource("4_qb6j1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1784526545]
 position = Vector2(0, 6.5)
